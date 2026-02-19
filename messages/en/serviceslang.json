@@ -1,0 +1,28 @@
+{
+  "serviceslang": {
+    "service1": {
+      "title": "Design",
+      "description": "We create modern and user-friendly interfaces."
+    },
+    "service2": {
+      "title": "Development",
+      "description": "Robust and scalable web applications."
+    },
+    "service3": {
+      "title": "Optimization",
+      "description": "Performance and SEO improvements."
+    },
+    "service4": {
+      "title": "Consulting",
+      "description": "Expert advice for your digital strategy."
+    },
+    "service5": {
+      "title": "Support",
+      "description": "Continuous maintenance and updates."
+    },
+    "service6": {
+      "title": "Analytics",
+      "description": "Data-driven insights for growth."
+    }
+  }
+}

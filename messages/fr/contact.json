@@ -1,0 +1,11 @@
+{
+  "contact": {
+    "title": "Contactez-nous",
+    "email": "Email",
+    "phone": "Téléphone",
+    "address": "Adresse",
+    "email_value": "contact@example.com",
+    "phone_value": "+33 000-0000",
+    "address_value": "123 Sample St, Paris, France"
+  }
+}

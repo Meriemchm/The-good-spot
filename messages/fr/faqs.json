@@ -1,0 +1,176 @@
+{
+  "faqs": {
+    "title": "FAQ",
+    "subtitle": "Questions fréquentes",
+
+    "faq1_question": "Le Coliving, qu'est‑ce que c'est ?",
+    "faq1_answer": "Le Coliving est une façon moderne et responsable de vivre ensemble. Il répond aux besoins de flexibilité, de confort et de convivialité des jeunes actifs. Chez The Good Spot, nous sélectionnons des maisons avec soin, toutes équipées d'un espace extérieur et pensées pour une vie en colocation harmonieuse. Chaque résident dispose de son espace privé (chambre + salle de bain), tandis que les espaces de vie sont partagés. Le loyer mensuel inclut tout : charges, ménage, services, électricité, internet... Rien à gérer, nous nous occupons de tout !",
+
+    "faq2_question": "Où se trouvent nos maisons ?",
+    "faq2_answer": "Toutes nos maisons sont situées en proche banlieue parisienne.",
+
+    "faq3_question": "Y a‑t‑il une durée minimale de location ?",
+    "faq3_answer": "Il n'existe pas de durée minimale légale. Toutefois, nous demandons aux candidats de se projeter sur au moins six mois afin d'assurer une bonne harmonie dans la maison. Si besoin, vous pouvez partir plus tôt en respectant un préavis d'un mois.",
+
+    "faq4_question": "Combien de personnes vivent dans un Coliving ?",
+    "faq4_answer": "Nos maisons accueillent entre 6 et 12 résidents, selon le nombre de chambres disponibles.",
+
+    "faq5_question": "Une maison doit‑elle être complète pour fonctionner ?",
+    "faq5_answer": "Non, une maison peut fonctionner même si toutes les chambres ne sont pas occupées.",
+
+    "faq6_question": "Qu'est‑ce qui est inclus dans mon loyer ?",
+    "faq6_answer_intro": "Le loyer comprend :",
+    "faq6_answer_list": [
+      "Un logement meublé et entièrement équipé",
+      "Les charges (eau, chauffage, électricité)",
+      "Le Wi‑Fi haut débit",
+      "L’assurance habitation",
+      "Le ménage hebdomadaire des parties communes",
+      "L’accès libre à tous les espaces communs : cuisine, salon, salle à manger, buanderie, espace extérieur"
+    ],
+
+    "faq7_question": "Doit‑on payer la taxe d'habitation ?",
+    "faq7_answer": "Oui, comme dans tout logement classique. Elle est calculée au prorata du temps passé dans la maison.",
+
+    "faq8_question": "Quel type de bail signe‑t‑on ?",
+    "faq8_answer": "Un bail meublé, conforme à la loi française n° 89‑462 du 6 juillet 1989.",
+
+    "faq9_question": "Peut‑on bénéficier de la CAF ?",
+    "faq9_answer": "Oui. Toutes nos maisons sont éligibles aux aides au logement (APL, ALS), selon votre situation. Les démarches doivent être faites directement sur le site de la CAF.",
+
+    "faq10_question": "À quelle date doit‑on payer son loyer ?",
+    "faq10_answer": "Les loyers sont prélevés chaque 5 du mois.",
+
+    "faq11_question": "Comment intégrer une maison ?",
+    "faq11_answer_intro": "Démarches :",
+    "faq11_answer_list": [
+      "Déposez votre dossier en ligne.",
+      "Passez un bref entretien en visioconférence.",
+      "Après validation, vous pouvez intégrer une maison rapidement."
+    ],
+    "faq11_answer_note": "Les réponses sont généralement communiquées sous 2 à 3 jours ouvrés.",
+
+    "faq12_question": "Quels documents sont requis pour réserver ?",
+    "faq12_answer_intro": "Vous devrez fournir :",
+    "faq12_answer_list": [
+      "Une pièce d'identité",
+      "Un justificatif d'activité (fiches de paie, contrat de travail, immatriculation d'entreprise, certificat de scolarité...)",
+      "Un justificatif de revenus"
+    ],
+    "faq12_answer_note": "Selon les situations, un garant peut être demandé. Les documents sont déposés sur la plateforme en ligne.",
+
+    "faq13_question": "Qu'est‑ce qu'un Coliver ?",
+    "faq13_answer": "Un Coliver est un ambassadeur de la maison. Il aide à la cooptation, participe aux visites, et peut être un relais en cas de difficulté.",
+
+    "faq14_question": "Comment devenir Coliver ?",
+    "faq14_answer": "Les Colivers sont sélectionnés par les équipes The Good Spot. Lorsqu'un Coliver quitte la maison, un résident volontaire peut reprendre le rôle.",
+
+    "faq15_question": "Peut‑on louer une chambre en couple ?",
+    "faq15_answer": "Non. Les chambres sont strictement individuelles, une seule personne par chambre.",
+
+    "faq16_question": "Les animaux sont‑ils autorisés ?",
+    "faq16_answer": "Non, pour des raisons de confort, de sécurité et d'hygiène.",
+
+    "faq17_question": "Les enfants sont‑ils acceptés ?",
+    "faq17_answer": "Non.",
+
+    "faq18_question": "Y a‑t‑il un âge maximal ?",
+    "faq18_answer": "Non. L'âge n'est pas un critère. La moyenne d'âge se situe autour de 30 ans, avec des résidents de 18 à 55 ans.",
+
+    "faq19_question": "Peut‑on postuler même sans disponibilité immédiate ?",
+    "faq19_answer": "Oui. Vous serez placé sur une liste d'attente.",
+
+    "faq20_question": "Est‑il possible de visiter un logement ?",
+    "faq20_answer": "Oui. Des visites virtuelles sont proposées afin de découvrir les logements à distance.",
+
+    "faq21_question": "Quels aménagements trouve‑t‑on dans les maisons ?",
+    "faq21_answer_intro": "Les maisons comprennent :",
+    "faq21_answer_list": [
+      "Une grande cuisine équipée",
+      "Un salon et une salle à manger confortables",
+      "Une buanderie",
+      "Un espace extérieur",
+      "Une chambre privative par résident",
+      "Une salle de bain privative"
+    ],
+
+    "faq22_question": "Le linge de maison est‑il fourni ?",
+    "faq22_answer": "Non, mais un kit de linge peut être acheté lors de la réservation et livré à l'arrivée.",
+
+    "faq23_question": "Le ménage est‑il inclus ?",
+    "faq23_answer": "Oui : un ménage des espaces communs est effectué une fois par semaine. La vaisselle et la gestion des poubelles restent à la charge des résidents. Aucun ménage n'est effectué dans les espaces privés.",
+
+    "faq24_question": "Peut‑on apporter ses propres meubles ?",
+    "faq24_answer": "La chambre est déjà entièrement aménagée, mais vous pouvez y ajouter quelques éléments décoratifs personnels.",
+
+    "faq25_question": "Peut‑on sous‑louer sa chambre ?",
+    "faq25_answer": "Non.",
+
+    "faq26_question": "Peut‑on inviter des amis ?",
+    "faq26_answer": "Oui, votre chambre est votre espace privé.",
+
+    "faq27_question": "Comment s'organise la vie en colocation ?",
+    "faq27_answer": "Chaque résident a son espace privé, tandis que les espaces communs sont partagés dans le respect, la communication et la convivialité.",
+
+    "faq28_question": "Peut‑on réserver deux chambres avec un ami ?",
+    "faq28_answer": "Oui, si des chambres sont disponibles. Nous recommandons de soumettre les deux demandes en même temps.",
+
+    "faq29_question": "Peut‑on occuper une chambre à deux ?",
+    "faq29_answer": "Non.",
+
+    "faq30_question": "Quel est le délai de traitement d'un dossier ?",
+    "faq30_answer": "Entre 24 et 72 heures, une fois le dossier complet.",
+
+    "faq31_question": "Puis‑je déclarer le logement comme résidence principale ?",
+    "faq31_answer": "Oui, vous pouvez déclarer votre logement comme résidence principale.",
+
+    "faq32_question": "Que couvre l'assurance incluse dans mon loyer ?",
+    "faq32_answer": "Elle couvre :\n- votre chambre privée,\n- les espaces communs.\nElle n'inclut pas :\n- vos effets personnels,\n- votre responsabilité civile.",
+
+    "faq33_question": "Quand ai‑je besoin d'un garant ?",
+    "faq33_answer_intro": "Un garant peut être exigé en cas de revenus jugés insuffisants ou irréguliers :",
+    "faq33_answer_list": [
+      "CDI en période d'essai",
+      "CDD court",
+      "Étudiants / apprentis",
+      "Indépendants depuis moins de 3 ans",
+      "Revenus instables"
+    ],
+
+    "faq34_question": "Quels types de garants sont acceptés ?",
+    "faq34_answer_intro": "Les garants acceptés :",
+    "faq34_answer_list": [
+      "Garants physiques (France ou étranger)",
+      "Garantie Visale",
+      "Garantie Garantme"
+    ],
+
+    "faq35_question": "Existe‑t‑il une liste d'attente ?",
+    "faq35_answer": "Oui, si le logement souhaité n'est pas disponible.",
+
+    "faq36_question": "Quels critères déterminent la priorité en liste d'attente ?",
+    "faq36_answer_intro": "La priorité est déterminée selon :",
+    "faq36_answer_list": [
+      "la date de candidature",
+      "la date souhaitée d'entrée",
+      "le type de logement demandé"
+    ],
+
+    "faq37_question": "Peut‑on fixer une date de fin de contrat ?",
+    "faq37_answer": "Non. En revanche, vous pouvez donner votre préavis dès votre arrivée si votre date de départ est connue.",
+
+    "faq38_question": "Peut‑on annuler ou modifier une réservation ?",
+    "faq38_answer_intro": "Les conditions selon le moment :",
+    "faq38_answer_list": [
+      "Avant signature : modification libre et sans frais.",
+      "Après signature, avant début du bail : modification possible, frais éventuels.",
+      "Après début du bail : les conditions du contrat s'appliquent."
+    ],
+
+    "faq39_question": "Les frais de dossier sont‑ils remboursables ?",
+    "faq39_answer": "Non.",
+
+    "faq40_question": "Comment recevoir du courrier ou des colis ?",
+    "faq40_answer": "Chaque maison dispose d'une boîte aux lettres partagée. Pensez à indiquer le numéro du logement pour garantir la bonne livraison."
+  }
+}

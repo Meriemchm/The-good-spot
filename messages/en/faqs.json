@@ -1,0 +1,176 @@
+{
+  "faqs": {
+    "title": "FAQ",
+    "subtitle": "Frequently Asked Questions",
+
+    "faq1_question": "What is Coliving?",
+    "faq1_answer": "Coliving is a modern and responsible way of living together. It meets the flexibility, comfort and conviviality needs of young professionals. At The Good Spot, we carefully select houses, all equipped with an outdoor space and designed for harmonious shared living. Each resident has their private space (bedroom + bathroom), while the living areas are shared. The monthly rent includes everything: utilities, cleaning, services, electricity, internet... Nothing to manage, we take care of everything!",
+
+    "faq2_question": "Where are your houses located?",
+    "faq2_answer": "All our houses are located in the near suburbs of Paris.",
+
+    "faq3_question": "Is there a minimum rental period?",
+    "faq3_answer": "There is no legal minimum duration. However, we ask candidates to plan for at least six months to ensure good harmony in the house. If needed, you can leave earlier by giving one month's notice.",
+
+    "faq4_question": "How many people live in a Coliving?",
+    "faq4_answer": "Our houses accommodate between 6 and 12 residents, depending on the number of available bedrooms.",
+
+    "faq5_question": "Does a house need to be fully occupied to operate?",
+    "faq5_answer": "No, a house can operate even if not all rooms are occupied.",
+
+    "faq6_question": "What is included in my rent?",
+    "faq6_answer_intro": "The rent includes:",
+    "faq6_answer_list": [
+      "Furnished and fully equipped accommodation",
+      "Utilities (water, heating, electricity)",
+      "High-speed Wi-Fi",
+      "Home insurance",
+      "Weekly cleaning of common areas",
+      "Free access to all common spaces: kitchen, living room, dining room, laundry room, outdoor space"
+    ],
+
+    "faq7_question": "Do I have to pay the occupancy tax?",
+    "faq7_answer": "Yes, as in any conventional housing. It is calculated pro rata to the time spent in the house.",
+
+    "faq8_question": "What type of lease do I sign?",
+    "faq8_answer": "A furnished lease, in accordance with French law n° 89‑462 of July 6, 1989.",
+
+    "faq9_question": "Can I get CAF housing benefits?",
+    "faq9_answer": "Yes. All our houses are eligible for housing assistance (APL, ALS), depending on your situation. Applications must be made directly on the CAF website.",
+
+    "faq10_question": "When is the rent due?",
+    "faq10_answer": "Rent is debited on the 5th of each month.",
+
+    "faq11_question": "How do I join a house?",
+    "faq11_answer_intro": "Steps:",
+    "faq11_answer_list": [
+      "Submit your application online.",
+      "Have a short video interview.",
+      "After approval, you can quickly move into a house."
+    ],
+    "faq11_answer_note": "Answers are usually given within 2 to 3 working days.",
+
+    "faq12_question": "What documents are required to book?",
+    "faq12_answer_intro": "You will need to provide:",
+    "faq12_answer_list": [
+      "An ID document",
+      "Proof of occupation (pay slips, employment contract, business registration, student certificate, etc.)",
+      "Proof of income"
+    ],
+    "faq12_answer_note": "Depending on the situation, a guarantor may be required. Documents are uploaded to the online platform.",
+
+    "faq13_question": "What is a Coliver?",
+    "faq13_answer": "A Coliver is a house ambassador. They help with co-optation, participate in visits, and can be a contact in case of difficulty.",
+
+    "faq14_question": "How can I become a Coliver?",
+    "faq14_answer": "Colivers are selected by The Good Spot teams. When a Coliver leaves the house, a volunteer resident can take over the role.",
+
+    "faq15_question": "Can a couple rent a room?",
+    "faq15_answer": "No. Rooms are strictly individual, one person per room.",
+
+    "faq16_question": "Are pets allowed?",
+    "faq16_answer": "No, for comfort, safety and hygiene reasons.",
+
+    "faq17_question": "Are children accepted?",
+    "faq17_answer": "No.",
+
+    "faq18_question": "Is there an age limit?",
+    "faq18_answer": "No. Age is not a criterion. The average age is around 30, with residents ranging from 18 to 55.",
+
+    "faq19_question": "Can I apply even without immediate availability?",
+    "faq19_answer": "Yes. You will be placed on a waiting list.",
+
+    "faq20_question": "Is it possible to visit a property?",
+    "faq20_answer": "Yes. Virtual tours are offered to discover the properties remotely.",
+
+    "faq21_question": "What amenities are in the houses?",
+    "faq21_answer_intro": "The houses include:",
+    "faq21_answer_list": [
+      "A large equipped kitchen",
+      "A comfortable living and dining room",
+      "A laundry room",
+      "An outdoor space",
+      "A private bedroom per resident",
+      "A private bathroom"
+    ],
+
+    "faq22_question": "Is linen provided?",
+    "faq22_answer": "No, but a linen kit can be purchased upon booking and delivered on arrival.",
+
+    "faq23_question": "Is cleaning included?",
+    "faq23_answer": "Yes: cleaning of common areas is done once a week. Dishes and garbage management remain the responsibility of residents. No cleaning is done in private spaces.",
+
+    "faq24_question": "Can I bring my own furniture?",
+    "faq24_answer": "The bedroom is already fully furnished, but you can add some personal decorative items.",
+
+    "faq25_question": "Can I sublet my room?",
+    "faq25_answer": "No.",
+
+    "faq26_question": "Can I invite friends?",
+    "faq26_answer": "Yes, your bedroom is your private space.",
+
+    "faq27_question": "How is life in the coliving organized?",
+    "faq27_answer": "Each resident has their private space, while common areas are shared with respect, communication and conviviality.",
+
+    "faq28_question": "Can I book two rooms with a friend?",
+    "faq28_answer": "Yes, if rooms are available. We recommend submitting both applications at the same time.",
+
+    "faq29_question": "Can two people occupy one room?",
+    "faq29_answer": "No.",
+
+    "faq30_question": "What is the processing time for an application?",
+    "faq30_answer": "Between 24 and 72 hours, once the application is complete.",
+
+    "faq31_question": "Can I declare the accommodation as my main residence?",
+    "faq31_answer": "Yes, you can declare your accommodation as your main residence.",
+
+    "faq32_question": "What does the insurance included in my rent cover?",
+    "faq32_answer": "It covers:\n- your private bedroom,\n- the common areas.\nIt does not cover:\n- your personal belongings,\n- your civil liability.",
+
+    "faq33_question": "When do I need a guarantor?",
+    "faq33_answer_intro": "A guarantor may be required in case of insufficient or irregular income:",
+    "faq33_answer_list": [
+      "Permanent contract during trial period",
+      "Short-term fixed-term contract",
+      "Students / apprentices",
+      "Self-employed for less than 3 years",
+      "Unstable income"
+    ],
+
+    "faq34_question": "What types of guarantors are accepted?",
+    "faq34_answer_intro": "Accepted guarantors:",
+    "faq34_answer_list": [
+      "Physical guarantors (France or abroad)",
+      "Visale guarantee",
+      "Garantme guarantee"
+    ],
+
+    "faq35_question": "Is there a waiting list?",
+    "faq35_answer": "Yes, if the desired accommodation is not available.",
+
+    "faq36_question": "What criteria determine priority on the waiting list?",
+    "faq36_answer_intro": "Priority is determined by:",
+    "faq36_answer_list": [
+      "application date",
+      "desired move-in date",
+      "type of accommodation requested"
+    ],
+
+    "faq37_question": "Can I set an end date for the contract?",
+    "faq37_answer": "No. However, you can give notice as soon as you arrive if your departure date is known.",
+
+    "faq38_question": "Can I cancel or modify a reservation?",
+    "faq38_answer_intro": "Conditions depending on the moment:",
+    "faq38_answer_list": [
+      "Before signing: free modification without fees.",
+      "After signing, before lease start: modification possible, possible fees.",
+      "After lease start: contract conditions apply."
+    ],
+
+    "faq39_question": "Are application fees refundable?",
+    "faq39_answer": "No.",
+
+    "faq40_question": "How do I receive mail or packages?",
+    "faq40_answer": "Each house has a shared mailbox. Remember to indicate the accommodation number to ensure proper delivery."
+  }
+}
