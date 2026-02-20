@@ -1,5 +1,7 @@
 {
   "serviceslang": {
+    "title": "Services",
+    "subtitle": "The quality of our services",
     "service1": {
       "title": "Design",
       "description": "We create modern and user-friendly interfaces."

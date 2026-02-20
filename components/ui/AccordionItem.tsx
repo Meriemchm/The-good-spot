@@ -13,7 +13,7 @@ interface AccordionItemProps {
 export default function AccordionItem({
   questionKey,
   answerKey,
-  isList = false
+  isList = false,
 }: AccordionItemProps) {
   const [open, setOpen] = useState(false);
   const t = useTranslations("faqs");
@@ -27,6 +27,7 @@ export default function AccordionItem({
         <span className="font-medium text-lg md:text-xl">
           {t(questionKey)}
         </span>
+
         <ChevronDown
           className={`transition-transform duration-300 ${
             open ? "rotate-180" : ""
@@ -34,19 +35,24 @@ export default function AccordionItem({
         />
       </button>
 
-      {open && (
+      {open && answerKey && (
         <div className="mt-4 text-black text-sm leading-relaxed">
           {isList ? (
             <>
-              <p className="mb-3">{t("faq3_answer_intro")}</p>
+              {/* intro dynamique */}
+              <p className="mb-3">{t(`${answerKey}_intro`)}</p>
+
+              {/* liste dynamique */}
               <ul className="list-disc pl-5 space-y-2">
-                {t.raw("faq3_answer_list").map((item: string, index: number) => (
-                  <li key={index}>{item}</li>
-                ))}
+                {t
+                  .raw(`${answerKey}_list`)
+                  .map((item: string, index: number) => (
+                    <li key={index}>{item}</li>
+                  ))}
               </ul>
             </>
           ) : (
-            <p>{t(answerKey!)}</p>
+            <p>{t(answerKey)}</p>
           )}
         </div>
       )}

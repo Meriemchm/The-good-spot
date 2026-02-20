@@ -44,8 +44,8 @@ export function useGsapFade(direction: Direction = "up") {
           ease: "power3.out",
           scrollTrigger: {
             trigger: el,
-            start: "top 80%",
-            toggleActions: "play none none reverse",
+            start: "top bottom",
+            toggleActions: "play none none none",
           },
         });
       });

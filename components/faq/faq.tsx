@@ -6,9 +6,9 @@ import { useTranslations } from "next-intl";
 export default function FAQSection() {
   const t = useTranslations("faqs");
   return (
-    <section className="py-4 bg-white">
+    <section className=" bg-white">
       <HearderTitle title={t("title")} subtitle={t("subtitle")} />
-      <div className="container mx-auto max-w-3xl">
+      <div className="">
         {FAQData.map((item) => (
           <AccordionItem
             key={item.id}

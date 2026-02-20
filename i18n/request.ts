@@ -12,6 +12,12 @@ export default getRequestConfig(async ({ requestLocale }) => {
     ...((await import(`../messages/${locale}/footer.json`)).default),
     ...((await import(`../messages/${locale}/faqs.json`)).default),
     ...((await import(`../messages/${locale}/serviceslang.json`)).default),
+    ...((await import(`../messages/${locale}/charterlang.json`)).default),
+    ...((await import(`../messages/${locale}/conceptlang.json`)).default),
+    ...((await import(`../messages/${locale}/ctafooterlang.json`)).default),
+    ...((await import(`../messages/${locale}/ctasectionlang.json`)).default),
+    
+    
     
   };
 

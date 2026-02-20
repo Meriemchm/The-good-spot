@@ -1,0 +1,24 @@
+{
+  "charterlang": {
+    "respect": {
+      "title": "Respect et bienveillance",
+      "description": "Vivre ensemble commence par le respect de chacun.",
+      "list": [
+        "Respect des personnes et des différences",
+        "Respect des espaces privés et partagés",
+        "Comportement ouvert et poli"
+      ],
+      "note": "Chaque résident contribue à une atmosphère chaleureuse."
+    },
+    "spaces": {
+      "title": "Espaces partagés",
+      "description": "Les espaces communs sont pensés pour être agréables et fonctionnels pour tous.",
+      "list": [
+        "Maintenir les espaces communs propres après utilisation",
+        "Respecter la tranquillité et l’intimité des autres",
+        "Utiliser les équipements avec soin"
+      ],
+      "note": "Les espaces partagés fonctionnent mieux quand chacun en prend soin."
+    }
+  }
+}

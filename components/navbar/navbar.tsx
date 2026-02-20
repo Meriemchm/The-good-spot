@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <div
       className={clsx(
-        "fixed w-full z-50 top-2 transition-all duration-300 ",
+        "absolute w-full z-50 top-2 transition-all duration-300 ",
         
       )}
     >

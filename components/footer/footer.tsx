@@ -13,7 +13,7 @@ export default function Footer() {
   const locale = useLocale();
 
   return (
-    <footer className="bg-gray-100 px-4 md:px-0 pt-16 pb-6">
+    <footer className=" px-4 md:px-0 pt-16 pb-6">
       <div className="container mx-auto grid md:grid-cols-3 grid-cols-1 gap-10 text-sm">
         {/* Left Section */}
         <div className="space-y-4">

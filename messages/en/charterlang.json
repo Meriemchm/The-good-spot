@@ -1,0 +1,24 @@
+{
+  "charterlang": {
+    "respect": {
+      "title": "Respect & kindness",
+      "description": "Living together starts with mutual respect.",
+      "list": [
+        "Respect people and differences",
+        "Respect shared and private spaces",
+        "Open and polite behavior"
+      ],
+      "note": "Each resident contributes to a warm atmosphere."
+    },
+    "spaces": {
+      "title": "Shared spaces",
+      "description": "Common areas are designed to be welcoming and functional for everyone.",
+      "list": [
+        "Keep shared spaces clean after use",
+        "Respect others’ privacy and quiet time",
+        "Use equipment responsibly"
+      ],
+      "note": "Shared spaces work best when everyone takes care of them."
+    }
+  }
+}

@@ -8,6 +8,7 @@ import FAQ from "@/components/faq/faq";
 
 import { Houses } from "@/components/houses/houses";
 import Services  from "@/components/services/services";
+import { Container } from "@/components/ui/container";
 import { useParams } from "next/navigation";
 
 // Tous les slugs FR/EN
@@ -23,7 +24,6 @@ const slugs: Record<string, string[]> = {
 export default function DynamicPage() {
   const params = useParams();
   const slugArr = params.slug;
-  console.log("Params reçus :", slugArr);
   const slug = Array.isArray(slugArr) ? slugArr[0] : slugArr;
 
   if (!slug) return <div>Slug introuvable</div>;
@@ -62,7 +62,7 @@ export default function DynamicPage() {
   return (
     <div className="overflow-hidden">
       <Banner pageKey={pageKey} />
-      {renderPage()}
+      <Container className="pt-12 pb-24">{renderPage()}</Container>
     </div>
   );
 }

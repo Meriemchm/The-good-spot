@@ -1,14 +1,24 @@
-// components/ServiceCard.jsx
+// components/ServiceCard.tsx
+import { ReactNode } from "react";
+
+type ServiceCardProps = {
+  icon: ReactNode;
+  title: string;
+  description: string;
+  highlighted?: boolean;
+};
+
 export default function ServiceCard({
   icon,
   title,
   description,
-  highlighted,
-}) {
+  highlighted = false,
+}: ServiceCardProps) {
   return (
     <div
       className={`
-        rounded-2xl p-6 transition-all duration-300
+        rounded-tr-2xl rounded-br-2xl rounded-bl-2xl
+        p-6 transition-all duration-300
         ${
           highlighted
             ? "bg-yellow-400 text-white"

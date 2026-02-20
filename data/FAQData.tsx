@@ -1,17 +1,45 @@
+// types/faq.ts (optionnel, pour typer)
+
+
 export const FAQData = [
-  {
-    id: 1,
-    questionKey: "faq1_question",
-    answerKey: "faq1_answer"
-  },
-  {
-    id: 2,
-    questionKey: "faq2_question",
-    answerKey: "faq2_answer"
-  },
-  {
-    id: 3,
-    questionKey: "faq3_question",
-    isList: true
-  }
+  { id: 1, questionKey: "faq1_question", answerKey: "faq1_answer" },
+  { id: 2, questionKey: "faq2_question", answerKey: "faq2_answer" },
+  { id: 3, questionKey: "faq3_question", answerKey: "faq3_answer" },
+  { id: 4, questionKey: "faq4_question", answerKey: "faq4_answer" },
+  { id: 5, questionKey: "faq5_question", answerKey: "faq5_answer" },
+  { id: 6, questionKey: "faq6_question", answerKey: "faq6_answer", isList: true },
+  { id: 7, questionKey: "faq7_question", answerKey: "faq7_answer" },
+  { id: 8, questionKey: "faq8_question", answerKey: "faq8_answer" },
+  { id: 9, questionKey: "faq9_question", answerKey: "faq9_answer" },
+  { id: 10, questionKey: "faq10_question", answerKey: "faq10_answer" },
+  { id: 11, questionKey: "faq11_question", answerKey: "faq11_answer", isList: true },
+  { id: 12, questionKey: "faq12_question", answerKey: "faq12_answer", isList: true },
+  { id: 13, questionKey: "faq13_question", answerKey: "faq13_answer" },
+  { id: 14, questionKey: "faq14_question", answerKey: "faq14_answer" },
+  { id: 15, questionKey: "faq15_question", answerKey: "faq15_answer" },
+  { id: 16, questionKey: "faq16_question", answerKey: "faq16_answer" },
+  { id: 17, questionKey: "faq17_question", answerKey: "faq17_answer" },
+  { id: 18, questionKey: "faq18_question", answerKey: "faq18_answer" },
+  { id: 19, questionKey: "faq19_question", answerKey: "faq19_answer" },
+  { id: 20, questionKey: "faq20_question", answerKey: "faq20_answer" },
+  { id: 21, questionKey: "faq21_question", answerKey: "faq21_answer", isList: true },
+  { id: 22, questionKey: "faq22_question", answerKey: "faq22_answer" },
+  { id: 23, questionKey: "faq23_question", answerKey: "faq23_answer" },
+  { id: 24, questionKey: "faq24_question", answerKey: "faq24_answer" },
+  { id: 25, questionKey: "faq25_question", answerKey: "faq25_answer" },
+  { id: 26, questionKey: "faq26_question", answerKey: "faq26_answer" },
+  { id: 27, questionKey: "faq27_question", answerKey: "faq27_answer" },
+  { id: 28, questionKey: "faq28_question", answerKey: "faq28_answer" },
+  { id: 29, questionKey: "faq29_question", answerKey: "faq29_answer" },
+  { id: 30, questionKey: "faq30_question", answerKey: "faq30_answer" },
+  { id: 31, questionKey: "faq31_question", answerKey: "faq31_answer" },
+  { id: 32, questionKey: "faq32_question", answerKey: "faq32_answer" },
+  { id: 33, questionKey: "faq33_question", answerKey: "faq33_answer", isList: true },
+  { id: 34, questionKey: "faq34_question", answerKey: "faq34_answer", isList: true },
+  { id: 35, questionKey: "faq35_question", answerKey: "faq35_answer" },
+  { id: 36, questionKey: "faq36_question", answerKey: "faq36_answer", isList: true },
+  { id: 37, questionKey: "faq37_question", answerKey: "faq37_answer" },
+  { id: 38, questionKey: "faq38_question", answerKey: "faq38_answer", isList: true },
+  { id: 39, questionKey: "faq39_question", answerKey: "faq39_answer" },
+  { id: 40, questionKey: "faq40_question", answerKey: "faq40_answer" }
 ];

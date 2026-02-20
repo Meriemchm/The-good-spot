@@ -7,7 +7,7 @@ export default function ContactInfo() {
   const t = useTranslations("contact");
 
   return (
-    <section className="bg-gray-50 py-16">
+    <section className="bg-thirdary py-16">
       <div className="container mx-auto grid md:grid-cols-3 grid-cols-1 text-center gap-8">
         {ContactInfoData.map((info, index) => {
           const Icon = info.icon;

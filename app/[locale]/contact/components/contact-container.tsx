@@ -12,8 +12,8 @@ export const ContactContainer = () => {
   return (
     <div>
       <div
-        className="h-full bg-cover bg-center"
-        style={{ backgroundImage: "url('/images/contact-bg.png')" }} // <-- ton image ici
+        className="h-full bg-cover bg-center bg-thirdary rounded-br-2xl rounded-bl-2xl"
+        style={{ backgroundImage: "url('/images/contact-bg.png')" }} 
       >
         <Container className="py-24">
           {" "}

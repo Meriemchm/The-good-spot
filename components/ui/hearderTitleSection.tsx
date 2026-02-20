@@ -12,7 +12,7 @@ const HearderTitle: React.FC<hearderTitleProps> = ({ title, subtitle }) => {
   return (
     <div
       ref={fadeup}
-      className="flex flex-col w-full items-center text-center  justify-center py-8 "
+      className="flex flex-col w-full items-center text-center  justify-center pt-4 pb-16 "
     >
       <h1 className="md:text-sm text-xs capitalize text-primary font-semibold py-2 ">
         {title}

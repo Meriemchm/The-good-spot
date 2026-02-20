@@ -9,10 +9,10 @@ const Hero = () => {
   const t = useTranslations("hero"); 
 
   return (
-    <div className="relative w-screen h-screen overflow-hidden grid place-items-center">
+    <div className="relative h-screen bg-white overflow-hidden grid place-items-center">
       {/* Vidéo en background */}
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover rounded-bl-full"
+        className="absolute top-0 left-0 w-full h-full object-cover rounded-br-2xl rounded-bl-2xl"
         autoPlay
         loop
         muted
@@ -38,7 +38,7 @@ const Hero = () => {
           {t("subtitle")}
         </p>
         <Link href={t("cta.url")}>
-          <button className="bg-white text-gray-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-opacity-90 transition shadow-lg">
+          <button className="bg-white text-gray-900 px-8 py-4 rounded-md font-semibold text-lg hover:bg-opacity-90 transition shadow-lg">
             {t("cta.label")}
           </button>
         </Link>

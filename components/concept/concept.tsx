@@ -1,7 +1,11 @@
-import React from 'react'
+import React from "react";
+import ConceptSection from "../ui/concept-section";
 
 export const Concept = () => {
   return (
-    <div>concept</div>
-  )
-}
+    <div>
+      {" "}
+      <ConceptSection />
+    </div>
+  );
+};

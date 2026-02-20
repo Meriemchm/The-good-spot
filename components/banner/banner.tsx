@@ -17,7 +17,7 @@ export const Banner = ({ pageKey }: BannerProps) => {
     >
       <div className="absolute top-0 left-0 w-full h-full bg-black/40"></div>
 
-      <h1 className="relative z-10 text-white text-3xl md:text-5xl font-bold">
+      <h1 className="relative z-10 text-white text-3xl md:text-5xl font-meduim">
         {t(`${pageKey}`)}
       </h1>
     </div>
