@@ -12,6 +12,17 @@
         "residential": "Residential",
         "privateHouse": "Private House",
         "duplex": "Duplex"
+      },
+      "info-house": {
+        "price": { "title": "Price", "content": "Starting from €250,000" },
+        "service": {
+          "title": "Service",
+          "content": ["24/7 Concierge", "Garden maintenance", "Cleaning"]
+        },
+        "room": {
+          "title": "Room",
+          "content": ["2 spacious bedrooms", "1 master suite"]
+        }
       }
     },
     "scotia-plaza": {
@@ -21,6 +32,17 @@
         "residential": "Residential",
         "apartment": "Apartment",
         "luxury": "Luxury"
+      },
+      "info-house": {
+        "price": { "title": "Price", "content": "Starting from €250,000" },
+        "service": {
+          "title": "Service",
+          "content": ["24/7 Concierge", "Garden maintenance", "Cleaning"]
+        },
+        "room": {
+          "title": "Room",
+          "content": ["2 spacious bedrooms", "1 master suite"]
+        }
       }
     },
     "casa-villa": {
@@ -30,6 +52,17 @@
         "residential": "Residential",
         "privateHouse": "Private House",
         "villa": "Villa"
+      },
+      "info-house": {
+        "price": { "title": "Price", "content": "Starting from €250,000" },
+        "service": {
+          "title": "Service",
+          "content": ["24/7 Concierge", "Garden maintenance", "Cleaning"]
+        },
+        "room": {
+          "title": "Room",
+          "content": ["2 spacious bedrooms", "1 master suite"]
+        }
       }
     },
     "viewMore": "View More"

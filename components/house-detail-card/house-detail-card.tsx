@@ -11,6 +11,7 @@ import { Navigation, Pagination } from "swiper/modules";   // ← corrigé
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import HouseTabs from "../ui/house-tabs";
 
 interface HouseDetailCardProps {
   house: House;
@@ -81,6 +82,9 @@ export default function HouseDetailCard({ house }: HouseDetailCardProps) {
           ))}
         </div>
       )}
+
+
+      <HouseTabs houseName={house.nameHouse} />
     </div>
   );
 }
