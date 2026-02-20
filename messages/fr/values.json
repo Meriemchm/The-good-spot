@@ -1,0 +1,21 @@
+{
+  "values": {
+    "title": "Nos Valeurs",
+    "subtitle": "Un mode de vie pensé pour le bien-être",
+
+    "comfort": {
+      "title": "Confort",
+      "description": "Des espaces soigneusement aménagés, lumineux et fonctionnels."
+    },
+
+    "simplicity": {
+      "title": "Simplicité",
+      "description": "Services inclus et gestion sans contraintes."
+    },
+
+    "calm": {
+      "title": "Tranquillité",
+      "description": "Un environnement calme et respectueux."
+    }
+  }
+}

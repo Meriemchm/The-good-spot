@@ -1,0 +1,21 @@
+{
+  "values": {
+    "title": "Our Values",
+    "subtitle": "A lifestyle designed for well-being",
+
+    "comfort": {
+      "title": "Comfort",
+      "description": "Carefully designed, bright and functional spaces."
+    },
+
+    "simplicity": {
+      "title": "Simplicity",
+      "description": "Included services and stress-free management."
+    },
+
+    "calm": {
+      "title": "Calm",
+      "description": "A peaceful and respectful environment."
+    }
+  }
+}

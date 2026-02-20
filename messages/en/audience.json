@@ -1,0 +1,10 @@
+{
+  "audience": {
+    "title": "Who is coliving for?",
+    "description": "Coliving is designed for people looking for flexible, comfortable and human-centered housing while being part of a dynamic community.",
+
+    "youngProfessionals": "Young professionals",
+    "students": "Students",
+    "freelancers": "Freelancers"
+  }
+}

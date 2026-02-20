@@ -6,9 +6,8 @@ import { Community } from "@/components/community/community";
 import { Concept } from "@/components/concept/concept";
 import FAQ from "@/components/faq/faq";
 
-import { Houses } from "@/components/houses/houses";
+import Houses  from "@/components/houses/houses";
 import Services  from "@/components/services/services";
-import { Container } from "@/components/ui/container";
 import { useParams } from "next/navigation";
 
 // Tous les slugs FR/EN
@@ -62,7 +61,7 @@ export default function DynamicPage() {
   return (
     <div className="overflow-hidden">
       <Banner pageKey={pageKey} />
-      <Container className="pt-12 pb-24">{renderPage()}</Container>
+      {renderPage()}
     </div>
   );
 }

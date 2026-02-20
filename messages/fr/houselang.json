@@ -1,0 +1,14 @@
+{
+  
+  "houselang": {
+    "title": "Nos Maisons",
+    "description": "Lorem ipsum dolor sit amet.",
+    "button": "Voir Plus"
+  },
+  "property": {
+    "residential": "Résidentiel",
+    "privateHouse": "Maison privée",
+    "duplex": "Duplex",
+    "viewMore": "Voir Plus"
+  }
+}

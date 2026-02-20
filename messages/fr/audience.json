@@ -1,0 +1,10 @@
+{
+  "audience": {
+    "title": "À qui s’adresse le coliving ?",
+    "description": "Le coliving s’adresse à celles et ceux qui recherchent un logement flexible, confortable et humain, tout en faisant partie d’une communauté dynamique.",
+
+    "youngProfessionals": "Jeunes actifs",
+    "students": "Étudiants",
+    "freelancers": "Freelances"
+  }
+}

@@ -1,20 +1,20 @@
 "use client";
 
-import { useLocale } from "next-intl";
 
-export function Houses() {
-  const locale = useLocale();
+import { House, HouseData } from "@/data/HouseData";
+import HouseCard from "./house-column-card";
 
+
+interface PropertySectionProps {
+  houses: House[];
+}
+
+export default function PropertySection({ houses }: PropertySectionProps) {
   return (
-    <div>
-      <h1 className="text-3xl font-bold">
-        {locale === "fr" ? "Nos Maisons" : "Our Houses"}
-      </h1>
-      <p className="mt-4">
-        {locale === "fr"
-          ? "Voici le contenu pour nos maisons en français."
-          : "Here is the content for our houses in English."}
-      </p>
-    </div>
+    <section className="bg-[#F3F1EC] px-6 lg:px-20">
+      {HouseData.map((house) => (
+        <HouseCard key={house.id} property={house} />
+      ))}
+    </section>
   );
 }

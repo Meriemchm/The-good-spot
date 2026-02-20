@@ -24,6 +24,7 @@ export default function CtaFooter() {
           src="/Images/cta-footer-pic.png"
           alt="Communauté"
           fill
+          sizes=""
           priority
           className="object-cover"
         />
