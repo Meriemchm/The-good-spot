@@ -1,0 +1,6 @@
+{
+  "notFound": {
+    "message": "Oups ! La page que vous recherchez n'existe pas ou a été déplacée.",
+    "button": "Retour à l'accueil"
+  }
+}

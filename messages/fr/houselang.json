@@ -1,14 +1,37 @@
 {
-  
   "houselang": {
     "title": "Nos Maisons",
-    "description": "Lorem ipsum dolor sit amet.",
+    "description": "Découvrez nos maisons disponibles.",
     "button": "Voir Plus"
   },
   "property": {
-    "residential": "Résidentiel",
-    "privateHouse": "Maison privée",
-    "duplex": "Duplex",
+    "modern-haven": {
+      "title": "Modern Haven",
+      "description": "Belle maison moderne avec piscine et grand jardin...",
+      "tags": {
+        "residential": "Résidentiel",
+        "privateHouse": "Maison privée",
+        "duplex": "Duplex"
+      }
+    },
+    "scotia-plaza": {
+      "title": "Sunset Shores Estate",
+      "description": "Sunset Shores Estate offre confort et luxe au cœur de la ville...",
+      "tags": {
+        "residential": "Résidentiel",
+        "apartment": "Appartement",
+        "luxury": "Luxe"
+      }
+    },
+    "casa-villa": {
+      "title": "Casa Villa",
+      "description": "Villa spacieuse avec piscine et terrasse panoramique...",
+      "tags": {
+        "residential": "Résidentiel",
+        "privateHouse": "Maison privée",
+        "villa": "Villa"
+      }
+    },
     "viewMore": "Voir Plus"
   }
 }

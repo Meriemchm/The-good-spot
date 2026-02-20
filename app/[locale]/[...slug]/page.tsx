@@ -9,6 +9,7 @@ import FAQ from "@/components/faq/faq";
 import Houses  from "@/components/houses/houses";
 import Services  from "@/components/services/services";
 import { useParams } from "next/navigation";
+import NotFound from "../not-found";
 
 // Tous les slugs FR/EN
 const slugs: Record<string, string[]> = {
@@ -35,12 +36,12 @@ export default function DynamicPage() {
     }
   }
 
-  if (pageKey === "default") return <div>Page introuvable</div>;
+  if (pageKey === "default") return <NotFound />;
 
   const renderPage = () => {
     switch (pageKey) {
       case "houses":
-        return <Houses />;
+        return <Houses/>;
       case "concept":
         return <Concept />;
       case "services":

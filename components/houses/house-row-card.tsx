@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import { MapPin, BedDouble, Bath } from "lucide-react";
-import { House} from "@/data/HouseData";
+import { House } from "@/data/HouseData";
 import Link from "next/link";
-import {  useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 interface HouseCardProps {
   house: House;
@@ -12,37 +12,39 @@ interface HouseCardProps {
 
 export default function HouseCard({ house }: HouseCardProps) {
   const locale = useLocale();
+  const t = useTranslations("property");
+
   return (
     <div className="space-y-4">
+      {/* Image cliquable */}
       <Link key={house.id} href={`/${locale}/houses/${house.nameHouse}`}>
-        <div className="rounded-2xl overflow-hidden">
+        <div className="rounded-2xl overflow-hidden cursor-pointer">
           <Image
-            src={house.image}
-            alt={house.title}
+            src={house.images[0]}
+            alt={t(`${house.nameHouse}.title`)}
             width={400}
             height={350}
             className="object-cover w-full h-80 hover:scale-105 transition duration-500"
           />
         </div>
       </Link>
-      {/* Address */}
+
+      {/* Adresse */}
       <div className="flex items-center gap-2 text-sm text-gray-600">
         <MapPin size={16} className="text-amber-500" />
         {house.address}
       </div>
 
-      {/* Title */}
-      <h3 className="font-semibold text-lg">{house.title}</h3>
+      {/* Titre traduit */}
+      <h3 className="font-semibold text-lg">{t(`${house.nameHouse}.title`)}</h3>
 
       {/* Infos */}
       <div className="flex items-center gap-6 text-gray-500 text-sm">
         <div className="flex items-center gap-1">
-          <BedDouble size={16} />
-          {house.beds}
+          <BedDouble size={16} /> {house.beds}
         </div>
         <div className="flex items-center gap-1">
-          <Bath size={16} />
-          {house.baths}
+          <Bath size={16} /> {house.baths}
         </div>
       </div>
     </div>

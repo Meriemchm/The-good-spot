@@ -1,56 +1,16 @@
 export interface House {
   id: string;
-  nameHouse: string; // utilisé dans l’URL
-  title: string;
+  nameHouse: string; // utilisé dans l’URL et pour traduire
+  images: string[];
   address: string;
-  image: string;
   beds: number;
   baths: number;
-
-  // Optionnel : utilisé uniquement dans la page détails
-  description?: string;
-  tags?: string[];
   area?: number;
+  tags?: string[];
 }
 
 export const HouseData: House[] = [
-  {
-    id: "1",
-    nameHouse: "modern-haven",
-    title: "Modern Haven",
-    address: "123 Street, example, example",
-    image: "/Images/house-temp.png",
-    beds: 2,
-    baths: 2,
-    description:
-      "Belle maison moderne avec piscine et grand jardin...",
-    tags: ["residential", "privateHouse", "duplex"],
-    area: 250,
-  },
-  {
-    id: "2",
-    nameHouse: "scotia-plaza",
-    title: "Sunset Shores Estate",
-    address: "123 Street, example, example",
-    image: "/Images/house-temp.png",
-    beds: 2,
-    baths: 2,
-    description:
-      "Sunset Shores Estate offre confort et luxe au cœur de la ville...",
-    tags: ["residential", "apartment", "luxury"],
-    area: 300,
-  },
-  {
-    id: "3",
-    nameHouse: "casa-villa",
-    title: "Casa Villa",
-    address: "123 Street, example, example",
-    image: "/Images/house-temp.png",
-    beds: 3,
-    baths: 2,
-    description:
-      "Villa spacieuse avec piscine et terrasse panoramique...",
-    tags: ["residential", "privateHouse", "villa"],
-    area: 400,
-  },
+  { id: "1", nameHouse: "modern-haven", images: ["/Images/house-temp.png","/Images/house-temp.png","/Images/house-temp.png"], address: "123 Street", beds: 2, baths: 2, area: 250, tags: ["residential", "privateHouse", "duplex"] },
+  { id: "2", nameHouse: "scotia-plaza", images: ["/Images/house-temp.png"], address: "123 Street", beds: 2, baths: 2, area: 300, tags: ["residential", "apartment", "luxury"] },
+  { id: "3", nameHouse: "casa-villa", images: ["/Images/house-temp.png"], address: "123 Street", beds: 3, baths: 2, area: 400, tags: ["residential", "privateHouse", "villa"] },
 ];
