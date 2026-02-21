@@ -1,11 +1,31 @@
 {
   "contact": {
+    "lefttitle": "Contact Us",
     "title": "Contact Us",
+    "leftdescription": "Contact us now.",
+    "description": "Do you have questions about our homes, services, or want to schedule a visit? Our coliving team is here to help.",
     "email": "Email",
     "phone": "Phone",
     "address": "Address",
     "email_value": "contact@example.com",
     "phone_value": "+33 000-0000",
-    "address_value": "123 Sample St, Paris, France"
+    "address_value": "123 Sample St, Paris, France",
+    "contact_form": {
+      "firstname": "First Name",
+      "lastname": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Submit"
+    },
+    "contact_form_errors": {
+      "firstName": "First name is required",
+      "lastName": "Last name is required",
+      "email": "Invalid email address",
+      "phone": "Phone number is required",
+      "subject": "Subject must be at least 5 characters",
+      "message": "Message must be at least 5 characters"
+    }
   }
 }

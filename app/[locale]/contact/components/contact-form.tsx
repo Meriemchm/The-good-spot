@@ -4,15 +4,23 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import emailjs from "emailjs-com";
 import { useState } from "react";
-import { ContactFormData, contactSchema } from "@/schemas/contactSchema";
+import { createContactSchema, ContactFormData } from "@/schemas/contactSchema";
 import InputField from "@/components/ui/InputField";
 import Button from "@/components/ui/button";
 import toast from "react-hot-toast";
-import { useGsapFade } from "@/hooks/useGsapFade";
+import { useTranslations } from "next-intl";
 
 const ContactForm = () => {
-
   const [isSending, setIsSending] = useState(false);
+
+  // Labels du formulaire
+  const t = useTranslations("contact.contact_form");
+
+  //  Messages d'erreur Zod
+  const tErrors = useTranslations("contact.contact_form_errors");
+
+  // Schema dynamique avec traduction
+  const schema = createContactSchema(tErrors);
 
   const {
     register,
@@ -20,15 +28,12 @@ const ContactForm = () => {
     formState: { errors },
     reset,
   } = useForm<ContactFormData>({
-    resolver: zodResolver(contactSchema),
+    resolver: zodResolver(schema),
   });
-
-  {
-    /*on submit */
-  }
 
   const onSubmit = (data: ContactFormData) => {
     setIsSending(true);
+
     emailjs
       .send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
@@ -40,42 +45,42 @@ const ContactForm = () => {
           subject: data.subject,
           message: data.message,
         },
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
       )
       .then(() => {
-        setIsSending(false);
-        toast.success("Message sent successfully!");
+        toast.success(t("success"));
         reset();
       })
       .catch((error) => {
         console.error("EmailJS Error:", error);
-        toast.error("Something went wrong.");
+        toast.error(t("error"));
+      })
+      .finally(() => {
         setIsSending(false);
       });
   };
 
   return (
-    <form
-      onSubmit={handleSubmit(onSubmit)}
-      className=" space-y-4"
-    >
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+      {" "}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <InputField
-          label="First Name"
-          name="firstName"
-          register={register}
-          error={errors.firstName}
-        />
-        <InputField
-          label="Last Name"
+          label={t("lastname")}
           name="lastName"
           register={register}
           error={errors.lastName}
         />
+
+        <InputField
+          label={t("firstname")}
+          name="firstName"
+          register={register}
+          error={errors.firstName}
+        />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <InputField
-          label="Email"
+          label={t("email")}
           name="email"
           type="email"
           register={register}
@@ -83,7 +88,7 @@ const ContactForm = () => {
         />
 
         <InputField
-          label="Phone"
+          label={t("phone")}
           name="phone"
           type="tel"
           register={register}
@@ -91,22 +96,20 @@ const ContactForm = () => {
         />
       </div>
       <InputField
-        label="Subject"
+        label={t("subject")}
         name="subject"
         register={register}
         error={errors.subject}
       />
-
       <InputField
-        label="Your Message"
+        label={t("message")}
         name="message"
         textarea
         register={register}
         error={errors.message}
       />
-
       <Button type="submit" disabled={isSending} className="mt-4">
-        Send Message
+        {isSending ? t("sending") : t("submit")}
       </Button>
     </form>
   );

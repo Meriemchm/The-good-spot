@@ -2,7 +2,7 @@
 
 import { useTranslations, useLocale } from "next-intl";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
 interface NavbarLinkProps {
@@ -14,18 +14,46 @@ interface NavbarLinkProps {
 export default function NavbarLinks({
   items,
   isMobile = false,
-  closeMenu
+  closeMenu,
 }: NavbarLinkProps) {
   const t = useTranslations("navbar");
   const locale = useLocale();
   const [openMenuId, setOpenMenuId] = useState<number | null>(null);
 
+  const containerRef = useRef<HTMLDivElement>(null);
+
   const toggleMenu = (id: number) => {
     setOpenMenuId(openMenuId === id ? null : id);
   };
 
+  //  Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        containerRef.current &&
+        !containerRef.current.contains(event.target as Node)
+      ) {
+        setOpenMenuId(null);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  const handleLinkClick = () => {
+    setOpenMenuId(null);
+    if (closeMenu) closeMenu();
+  };
+
   return (
-    <div className={isMobile ? "flex flex-col gap-6" : "flex items-center gap-6"}>
+    <div
+      ref={containerRef}
+      className={isMobile ? "flex flex-col gap-6" : "flex items-center gap-6"}
+    >
       {items.map((item) => (
         <div key={item.id} className="relative">
           {item.children ? (
@@ -33,7 +61,7 @@ export default function NavbarLinks({
               <button
                 onClick={() => toggleMenu(item.id)}
                 className={`flex items-center gap-1 ${
-                  isMobile ? "text-lg w-full justify-between" : "text-xl"
+                  isMobile ? "text-base w-full justify-between" : "text-lg"
                 }`}
               >
                 {t(item.key)}
@@ -41,16 +69,17 @@ export default function NavbarLinks({
                   <ChevronUp size={16} />
                 ) : (
                   <ChevronDown size={16} />
-                )}
+                )}{" "}
               </button>
 
               {/* Desktop dropdown */}
               {!isMobile && openMenuId === item.id && (
-                <div className="absolute mt-2 w-48 bg-white shadow-md rounded z-10">
+                <div className="absolute mt-5 w-48 bg-white shadow-md rounded z-10">
                   {item.children.map((child: any) => (
                     <Link
                       key={child.id}
                       href={child.link[locale]}
+                      onClick={handleLinkClick}
                       className="block px-4 py-2 hover:bg-gray-100"
                     >
                       {t(child.key)}
@@ -61,12 +90,12 @@ export default function NavbarLinks({
 
               {/* Mobile dropdown */}
               {isMobile && openMenuId === item.id && (
-                <div className="mt-4 border-t pt-4 flex flex-col gap-4">
+                <div className="mt-4 border-t border-gray-300 pt-4 flex flex-col gap-4">
                   {item.children.map((child: any) => (
                     <Link
                       key={child.id}
                       href={child.link[locale]}
-                      onClick={closeMenu}
+                      onClick={handleLinkClick}
                       className="text-base text-gray-600"
                     >
                       {t(child.key)}
@@ -78,8 +107,8 @@ export default function NavbarLinks({
           ) : (
             <Link
               href={item.link[locale]}
-              onClick={closeMenu}
-              className={isMobile ? "text-lg" : "text-xl"}
+              onClick={handleLinkClick}
+              className={isMobile ? "text-base" : "text-lg"}
             >
               {t(item.key)}
             </Link>
