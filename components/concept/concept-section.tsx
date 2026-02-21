@@ -25,20 +25,21 @@ export default function ConceptSection() {
         </div>
 
         {/* Content */}
-        <div className="space-y-4">
+        <div className="space-y-9">
           <span className="text-yellow-500 text-sm">{t("title")}</span>
 
-          <h2 className="text-2xl font-semibold">{t("title")}</h2>
-
-          {paragraphs.map((p, i) => (
-            <p key={i} className="text-gray-600">
-              {p}
-            </p>
-          ))}
+          <h2 className="text-2xl font-semibold">{t("subtitle")}</h2>
+          <div className="space-y-2">
+            {paragraphs.map((p, i) => (
+              <p key={i} className="text-gray-600">
+                {p}
+              </p>
+            ))}
+          </div>
 
           <Link
-            href="\concept"
-            className="mt-4 bg-black text-white px-6 py-2 rounded-md"
+            href="/concept"
+            className="mt-4 bg-black text-white px-6 py-2 rounded-full"
           >
             {t("cta")}
           </Link>

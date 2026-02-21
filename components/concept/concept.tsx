@@ -7,14 +7,13 @@ import AudienceSection from "../coliving-audience/coliving-audience";
 import CtaFooter from "../cta-footer/cta-footer";
 
 export const Concept = () => {
-
   return (
     <div>
       {" "}
       <Container className="pt-12 pb-24">
         <ConceptSection />
-        <ValuesSection />
       </Container>
+      <ValuesSection />
       <CtaSection />
       <Container className="py-12">
         <AudienceSection />

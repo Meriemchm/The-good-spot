@@ -7,7 +7,7 @@ export default function AudienceSection() {
   const t = useTranslations("audience");
 
   return (
-    <section className="relative text-center py-16 overflow-hidden">
+    <section className="relative flex flex-col justify-center items-center text-center h-full py-25 overflow-hidden">
       <AudienceDecorations />
       <h2 className="text-3xl font-semibold mb-4">{t("title")}</h2>
 

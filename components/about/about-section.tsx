@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { ReactNode } from "react";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 interface CenteredHeroSectionProps {
   namespace: string;
@@ -15,16 +16,22 @@ export default function AboutSection({
   namespace,
   leftImage,
   rightImage,
-  icon
+  icon,
 }: CenteredHeroSectionProps) {
   const t = useTranslations(namespace);
 
   return (
-    <section className="relative bg-[#F3F1EC] py-28 overflow-hidden">
-      <div className="max-w-5xl mx-auto text-center px-6 relative z-10">
-        {icon && <div className="flex justify-center mb-6">{icon}</div>}
+    <section className="relative flex  bg-thirdary h-screen py-28 overflow-hidden">
+      <div className="flex flex-col justify-center items-center max-w-5xl mx-auto text-center px-6 relative z-10">
+        <Image
+          src='LogoTheGoodSpot.svg'
+          alt="left image"
+          width={80}
+          height={80}
+          className=""
+        />
 
-        <h2 className="text-4xl md:text-5xl font-semibold leading-tight mb-6">
+        <h2 className="text-4xl max-w-xl md:text-5xl font-semibold leading-tight mb-6">
           {t("title")}
         </h2>
 
@@ -32,14 +39,14 @@ export default function AboutSection({
           {t("description")}
         </p>
 
-        <button className="px-6 py-3 bg-black text-white rounded-full hover:bg-gray-800 transition">
+        <Link href={'/concept'} className="px-6 py-3 bg-black text-white rounded-full hover:bg-gray-800 transition">
           {t("button")}
-        </button>
+        </Link>
       </div>
 
       {/* LEFT IMAGE */}
-      <div className="absolute top-16 left-0 md:left-10">
-        <div className="transform transition-all duration-700 ease-out animate-slideInLeft hover:-translate-x-6">
+      <div className="absolute top-16 left-0 md:-left-10">
+        <div className="transform transition-all duration-700 ease-out hover:translate-x-6">
           <Image
             src={leftImage}
             alt="left image"
@@ -51,8 +58,8 @@ export default function AboutSection({
       </div>
 
       {/* RIGHT IMAGE */}
-      <div className="absolute bottom-16 right-0 md:right-10">
-        <div className="transform transition-all duration-700 ease-out animate-slideInRight hover:translate-x-6">
+      <div className="absolute bottom-16 right-0 md:-right-10">
+        <div className="transform transition-all duration-700 ease-out hover:-translate-x-6">
           <Image
             src={rightImage}
             alt="right image"

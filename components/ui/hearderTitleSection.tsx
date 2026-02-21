@@ -14,10 +14,10 @@ const HearderTitle: React.FC<hearderTitleProps> = ({ title, subtitle }) => {
       ref={fadeup}
       className="flex flex-col w-full items-center text-center  justify-center pt-4 pb-16 "
     >
-      <h1 className="md:text-sm text-xs capitalize text-primary font-semibold py-2 ">
+      <h1 className="md:text-sm  text-xs capitalize text-primary font-semibold py-2 ">
         {title}
       </h1>
-      <p className="text-xl md:text-3xl capitalize text-neutral-500">
+      <p className="text-xl  max-w-md md:text-3xl capitalize text-neutral-500">
         {subtitle}
       </p>
     </div>

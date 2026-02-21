@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div className="overflow-hidden">
       <Hero />
-      <Container>
+      <Container className="py-16">
         <ConceptSection />
       </Container>
       <AboutSection

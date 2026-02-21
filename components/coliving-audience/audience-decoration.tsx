@@ -9,7 +9,7 @@ export default function AudienceDecorations() {
         alt=""
         width={90}
         height={90}
-        className="absolute top-6 left-10 rounded-full border-4 border-yellow-400 object-cover"
+        className="absolute top-6 left-10 rounded-full border-4 object-cover"
         loading="lazy"
         quality={75}
         aria-hidden="true"
@@ -21,7 +21,7 @@ export default function AudienceDecorations() {
         alt=""
         width={50}
         height={50}
-        className="absolute top-32 left-20 rounded-full border-4 border-yellow-400 object-cover"
+        className="absolute top-32 left-20 rounded-full border-4  object-cover"
         loading="lazy"
         quality={75}
         aria-hidden="true"
@@ -33,7 +33,7 @@ export default function AudienceDecorations() {
         alt=""
         width={90}
         height={90}
-        className="absolute top-6 right-10 rounded-full border-4 border-yellow-400 object-cover"
+        className="absolute top-6 right-10 rounded-full border-4  object-cover"
         loading="lazy"
         quality={75}
         aria-hidden="true"
@@ -45,7 +45,7 @@ export default function AudienceDecorations() {
         alt=""
         width={50}
         height={50}
-        className="absolute top-32 right-20 rounded-full border-4 border-yellow-400 object-cover"
+        className="absolute top-32 right-20 rounded-full border-4  object-cover"
         loading="lazy"
         quality={75}
         aria-hidden="true"
