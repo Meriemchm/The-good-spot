@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 export default function CtaFooter() {
   const t = useTranslations("ctaFooterlang");
@@ -9,13 +10,13 @@ export default function CtaFooter() {
     <section className="w-full min-h-[500px] flex flex-col md:flex-row bg-primary">
       
       {/* Texte prend plus d'espace */}
-      <div className="flex-[2] flex flex-col justify-center text-black p-12">
-        <h2 className="text-2xl md:text-5xl font-meduim mb-6 leading-tight">
+      <div className="flex-2 flex flex-col justify-center text-black p-12">
+        <h2 className="text-2xl md:text-5xl max-w-2xl py-4 font-meduim mb-6 leading-tight">
           {t("title")}
         </h2>
-        <button className="px-6 py-3 bg-black text-white rounded-lg hover:opacity-90 transition w-fit">
+        <Link href={"/contact"} className="px-6 py-3 bg-black text-white rounded-full hover:opacity-90 transition w-fit">
           {t("button")}
-        </button>
+        </Link>
       </div>
 
       {/* Image plus petite */}

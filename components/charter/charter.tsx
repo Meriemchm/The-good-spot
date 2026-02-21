@@ -7,15 +7,17 @@ import CharterSidebar from "./charter-sidebar";
 import CharterPreview from "./charter-preview";
 import { Container } from "../ui/container";
 import AudienceSection from "../coliving-audience/coliving-audience";
+import { useTranslations } from "next-intl";
 
 export const Charter = () => {
   const [active, setActive] = useState(1);
+  const t = useTranslations("charterlang");
 
   const current = CharterData.find((c) => c.id === active)!;
 
   return (
     <Container className="pt-12 pb-24">
-      <AudienceSection />
+      <AudienceSection title={t("title")} description={t("description")} seeAudience={false} />
       <section className="grid md:grid-cols-3 gap-8">
         <CharterSidebar
           items={CharterData}

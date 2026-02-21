@@ -5,8 +5,10 @@ import CtaSection from "../cta-section/cta-section";
 import { Container } from "../ui/container";
 import AudienceSection from "../coliving-audience/coliving-audience";
 import CtaFooter from "../cta-footer/cta-footer";
+import { useTranslations } from "next-intl";
 
 export const Concept = () => {
+  const t = useTranslations("audience");
   return (
     <div>
       {" "}
@@ -16,7 +18,7 @@ export const Concept = () => {
       <ValuesSection />
       <CtaSection />
       <Container className="py-12">
-        <AudienceSection />
+        <AudienceSection t={t} title={t("title")} description={t("description")} />
       </Container>
       <CtaFooter />
     </div>
