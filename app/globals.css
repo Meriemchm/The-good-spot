@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -27,10 +27,11 @@
   }
 } */
 
-body {
+html, body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Rubik", sans-serif;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 400;
 }
 
 .happy-monkey-regular {

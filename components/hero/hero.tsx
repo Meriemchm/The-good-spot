@@ -1,18 +1,17 @@
 "use client";
-
-import { useGsapFade } from "@/hooks/useGsapFade";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Hero = () => {
-  const faderight = useGsapFade("up");
-  const t = useTranslations("hero"); 
+  const t = useTranslations("hero");
 
   return (
     <div className="relative h-screen bg-white overflow-hidden grid place-items-center">
       {/* Vidéo en background */}
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover rounded-br-2xl rounded-bl-2xl"
+        className="absolute top-0 left-0 w-full h-full object-cover "
         autoPlay
         loop
         muted
@@ -23,25 +22,66 @@ const Hero = () => {
         Votre navigateur ne supporte pas la vidéo HTML5.
       </video>
 
-      {/* Overlay sombre */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black/40"></div>
+      {/* Overlay animé */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="absolute top-0 left-0 w-full h-full bg-black/40"
+      />
 
-      {/* Texte et bouton centrés */}
-      <div
-        ref={faderight}
-        className="relative z-10 text-center px-4 max-w-3xl mx-auto"
-      >
-        <h1 className="text-white text-3xl md:text-5xl font-bold mb-6 leading-tight">
+      {/* Contenu animé */}
+      <div className="relative z-10 text-center px-4 max-w-3xl mx-auto">
+        {/* Title */}
+        <motion.h1
+          initial={{ opacity: 0, y: 60 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="relative text-white text-3xl md:text-5xl font-bold mb-6 leading-tight flex items-center justify-center gap-2"
+        >
           {t("title")}
-        </h1>
-        <p className="text-white/90 md:text-md mb-8 max-w-2xl mx-auto">
+          <Image
+            src="/stars.svg"
+            alt="stars"
+            width={28}
+            height={28}
+            className="absolute inline-block right-0 top-0"
+          />
+          <Image
+            src="/arrow-spiral-down-5.svg"
+            alt="spiral-down"
+            width={250}
+            height={250}
+            className="absolute inline-block -left-5 top-10"
+          />
+        </motion.h1>
+
+        {/* Subtitle */}
+        <motion.p
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="text-white/90 md:text-md mb-8 max-w-2xl mx-auto"
+        >
           {t("subtitle")}
-        </p>
-        <Link href={t("cta.url")}>
-          <button className="bg-white text-gray-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-opacity-90 transition shadow-lg">
-            {t("cta.label")}
-          </button>
-        </Link>
+        </motion.p>
+
+        {/* Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+        >
+          <Link href={t("cta.url")}>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-white text-gray-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-opacity-90 transition shadow-lg"
+            >
+              {t("cta.label")}
+            </motion.button>
+          </Link>
+        </motion.div>
       </div>
     </div>
   );

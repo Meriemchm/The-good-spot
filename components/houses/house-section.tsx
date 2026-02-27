@@ -1,36 +1,87 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import HouseCard from "./house-row-card";
 import { HouseData } from "@/data/HouseData";
 
-
 export default function HousesSection() {
   const t = useTranslations("houselang");
+
+  // Variantes pour le conteneur de l'en-tête
+  const headerVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  };
+
+  // Variantes pour la grille des cartes (stagger)
+  const gridContainerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 0.2,
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
 
   return (
     <section className="bg-[#F3F1EC] py-20">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-16 gap-6">
-          <h2 className="text-4xl md:text-5xl font-semibold">
+        {/* Header avec animations */}
+        <motion.div
+          className="flex flex-col md:flex-row md:items-center md:justify-between mb-16 gap-6"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={{
+            hidden: {},
+            visible: {
+              transition: {
+                staggerChildren: 0.2,
+              },
+            },
+          }}
+        >
+          <motion.h2
+            variants={headerVariants}
+            className="text-4xl md:text-5xl font-semibold"
+          >
             {t("title")}
-          </h2>
+          </motion.h2>
 
-          <div className="max-w-sm space-y-4">
+          <motion.div variants={headerVariants} className="max-w-sm space-y-4">
             <p className="text-gray-600">{t("description")}</p>
-            <button className="px-6 py-3 bg-black text-white rounded-full hover:bg-gray-800 transition">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              className="px-6 py-3 bg-black text-white rounded-full hover:scale-105 transition duration-300"
+            >
               {t("button")}
-            </button>
-          </div>
-        </div>
+            </motion.button>
+          </motion.div>
+        </motion.div>
 
-        {/* Cards */}
-        <div className="grid md:grid-cols-3 gap-10">
+        {/* Grille des cartes avec stagger */}
+        <motion.div
+          className="grid md:grid-cols-3 gap-10"
+          variants={gridContainerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+        >
           {HouseData.map((house) => (
-            <HouseCard key={house.id} house={house} />
+            <motion.div key={house.id} variants={cardVariants}>
+              <HouseCard house={house} />
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

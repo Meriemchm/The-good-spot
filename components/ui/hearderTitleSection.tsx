@@ -1,25 +1,40 @@
 "use client";
-import { useGsapFade } from "@/hooks/useGsapFade";
 import React from "react";
+import { motion } from "framer-motion";
 
-interface hearderTitleProps {
+interface HearderTitleProps {
   title: string;
   subtitle: string;
 }
 
-const HearderTitle: React.FC<hearderTitleProps> = ({ title, subtitle }) => {
-  const fadeup = useGsapFade("up");
+const HearderTitle: React.FC<HearderTitleProps> = ({ title, subtitle }) => {
+  const words = subtitle.split(" ");
+  const lastWord = words.pop();
+  const firstPart = words.join(" ");
+
   return (
-    <div
-      ref={fadeup}
-      className="flex flex-col w-full items-center text-center  justify-center pt-4 pb-16 "
-    >
-      <h1 className="md:text-sm  text-xs capitalize text-primary font-semibold py-2 ">
+    <div className="flex flex-col w-full items-center text-center justify-center pt-4 pb-16">
+      <motion.h1
+        className="md:text-sm text-xs capitalize text-primary font-semibold py-2"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
         {title}
-      </h1>
-      <p className="text-xl  max-w-md md:text-3xl capitalize text-neutral-500">
-        {subtitle}
-      </p>
+      </motion.h1>
+
+      <motion.p
+        className="text-2xl max-w-md md:text-4xl font-medium capitalize"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
+      >
+        {firstPart}{" "}
+        <span className="relative inline-block">
+          {lastWord}
+          <span className="absolute left-0 bottom-0 w-full h-1 bg-black "></span>
+        </span>
+      </motion.p>
     </div>
   );
 };

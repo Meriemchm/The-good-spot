@@ -15,7 +15,7 @@ export default function HouseCard({ house }: HouseCardProps) {
   const t = useTranslations("property");
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-2">
       {/* Image cliquable */}
       <Link key={house.id} href={`/${locale}/houses/${house.nameHouse}`}>
         <div className="rounded-2xl overflow-hidden cursor-pointer">
@@ -30,13 +30,17 @@ export default function HouseCard({ house }: HouseCardProps) {
       </Link>
 
       {/* Adresse */}
-      <div className="flex items-center gap-2 text-sm text-gray-600">
+      <div className="flex items-center gap-2 pt-4 text-sm text-gray-600">
         <MapPin size={16} className="text-amber-500" />
         {house.address}
       </div>
 
       {/* Titre traduit */}
-      <h3 className="font-semibold text-lg">{t(`${house.nameHouse}.title`)}</h3>
+      <Link  href={`/${locale}/houses/${house.nameHouse}`}>
+        <h3 className="font-semibold text-lg pb-4">
+          {t(`${house.nameHouse}.title`)}
+        </h3>{" "}
+      </Link>
 
       {/* Infos */}
       <div className="flex items-center gap-6 text-gray-500 text-sm">
