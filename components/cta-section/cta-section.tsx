@@ -57,7 +57,7 @@ export default function CtaSection() {
       >
         <motion.h2
           variants={itemVariants}
-          className="relative text-white text-3xl md:text-5xl font-semibold max-w-2xl leading-tight mb-6 md:mb-0"
+          className="relative text-white text-2xl md:text-5xl font-semibold max-w-2xl leading-tight mb-6 md:mb-0"
         >
           {t("title")}
           {/* Image ribbon en bas à gauche */}

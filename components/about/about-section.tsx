@@ -81,7 +81,7 @@ export default function AboutSection({
 
       {/* IMAGE GAUCHE */}
       <motion.div
-        className="absolute top-10 md:top-16 -left-10"
+        className="absolute top-10 md:top-16 -left-20 md:-left-10"
         initial={{ x: -100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true, amount: 0.3 }}
@@ -91,9 +91,9 @@ export default function AboutSection({
         <Image
           src={leftImage}
           alt="left image"
-          width={150}
-          height={170}
-          className="rounded-2xl object-cover shadow-lg md:w-70 md:h-80 w-56 h-auto"
+          width={500}
+          height={500}
+          className="rounded-2xl object-cover shadow-lg md:w-70 md:h-65 w-56 h-auto"
         />
       </motion.div>
 
@@ -109,8 +109,8 @@ export default function AboutSection({
         <Image
           src={rightImage}
           alt="right image"
-          width={180}
-          height={140}
+          width={500}
+          height={500}
           className="rounded-2xl object-cover shadow-lg md:w-[320px] md:h-65 w-56 h-auto"
         />
       </motion.div>

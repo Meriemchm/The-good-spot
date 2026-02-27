@@ -55,7 +55,7 @@ export default function ConceptSection() {
             {t("title")}
           </motion.span>
 
-          <motion.h2 className="text-2xl font-semibold" variants={itemVariants}>
+          <motion.h2 className="text-2xl md:text-4xl font-meduim" variants={itemVariants}>
             {t("subtitle")}
           </motion.h2>
 

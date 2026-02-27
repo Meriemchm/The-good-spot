@@ -13,9 +13,9 @@ const HearderTitle: React.FC<HearderTitleProps> = ({ title, subtitle }) => {
   const firstPart = words.join(" ");
 
   return (
-    <div className="flex flex-col w-full items-center text-center justify-center pt-4 pb-16">
+    <div className="flex flex-col w-full items-center text-center justify-center pt-4 md:pb-16">
       <motion.h1
-        className="md:text-sm text-xs capitalize text-primary font-semibold py-2"
+        className="md:text-sm text-xs capitalize text-primary font-medium py-2"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}

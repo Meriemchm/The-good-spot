@@ -7,8 +7,9 @@ import { motion } from "framer-motion";
 interface SectionBlockProps {
   sectionKey: string;
   buttonKey?: boolean;
-  imageSrc: string;
+  imageSrc: string | string[]; // accepte une ou plusieurs images
   reverse?: boolean;
+  sparkles?: boolean;
 }
 
 export default function SectionBlock({
@@ -16,10 +17,10 @@ export default function SectionBlock({
   buttonKey = false,
   imageSrc,
   reverse = false,
+  sparkles = false,
 }: SectionBlockProps) {
   const t = useTranslations(`${sectionKey}`);
 
-  // Variantes pour le conteneur principal (stagger)
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -36,6 +37,8 @@ export default function SectionBlock({
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
   };
 
+  const isImageArray = Array.isArray(imageSrc);
+
   return (
     <motion.section
       className="w-full py-20"
@@ -49,7 +52,7 @@ export default function SectionBlock({
         }`}
         variants={containerVariants}
       >
-        {/* Text Content */}
+        {/* Texte */}
         <motion.div className="flex-1 space-y-6" variants={itemVariants}>
           <motion.span
             variants={itemVariants}
@@ -60,14 +63,25 @@ export default function SectionBlock({
 
           <motion.h2
             variants={itemVariants}
-            className="text-4xl font-semibold leading-tight"
+            className="relative text-5xl font-medium leading-tight"
           >
-            {t("title")}
+            <span className="inline-flex items-start gap-1 flex-wrap">
+              {t("title")}
+              {sparkles && (
+                <Image
+                  src="/sparkles.svg"
+                  alt=""
+                  width={24}
+                  height={24}
+                  className="absolute left-75 w-16 h-16 -translate-y-1 md:-translate-y-1.5"
+                />
+              )}
+            </span>
           </motion.h2>
 
           <motion.p
             variants={itemVariants}
-            className="text-gray-600 leading-relaxed"
+            className="text-gray-600 leading-relaxed max-w-md"
           >
             {t("description")}
           </motion.p>
@@ -85,16 +99,34 @@ export default function SectionBlock({
           )}
         </motion.div>
 
-        {/* Image */}
+        {/* Image(s) */}
         <motion.div className="flex-1" variants={itemVariants}>
-          <Image
-            src={imageSrc}
-            alt="section image"
-            width={600}
-            height={500}
-            className="rounded-2xl object-cover w-full h-auto"
-            loading="eager"
-          />
+          {isImageArray ? (
+            <div className="grid grid-cols-2 gap-4">
+              {imageSrc.map((src, index) => (
+                <div
+                  key={index}
+                  className="relative aspect-square overflow-hidden rounded-2xl"
+                >
+                  <Image
+                    src={src}
+                    alt={`section image ${index + 1}`}
+                    fill
+                    className="object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              ))}
+            </div>
+          ) : (
+            <Image
+              src={imageSrc}
+              alt="section image"
+              width={600}
+              height={600}
+              className="rounded-2xl object-cover w-full h-auto hover:scale-105 transition-transform duration-300"
+              loading="eager"
+            />
+          )}
         </motion.div>
       </motion.div>
     </motion.section>

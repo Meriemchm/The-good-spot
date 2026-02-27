@@ -16,8 +16,8 @@ const Home = () => {
       </Container>
       <AboutSection
         namespace="about"
-        leftImage="/Images/about-left.png"
-        rightImage="/Images/about-right.png"
+        leftImage="/Images/about-left.jpg"
+        rightImage="/Images/about-right.jpg"
       />
       <CtaSection />
       <HousesSection />

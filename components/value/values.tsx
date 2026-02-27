@@ -37,7 +37,7 @@ export default function ValuesSection() {
   };
 
   return (
-    <section className="h-full py-25 flex justify-center items-center bg-thirdary/50">
+    <section className="h-full py-25 flex justify-center items-center bg-thirdary">
       <motion.div
         variants={containerVariants}
         initial="hidden"
