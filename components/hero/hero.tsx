@@ -38,7 +38,7 @@ const Hero = () => {
           {t("subtitle")}
         </p>
         <Link href={t("cta.url")}>
-          <button className="bg-white text-gray-900 px-8 py-4 rounded-md font-semibold text-lg hover:bg-opacity-90 transition shadow-lg">
+          <button className="bg-white text-gray-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-opacity-90 transition shadow-lg">
             {t("cta.label")}
           </button>
         </Link>

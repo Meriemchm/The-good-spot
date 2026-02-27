@@ -17,9 +17,9 @@ export const Community = () => {
         imageSrc="/Images/daily-pic.png"
         reverse={true}
       />
-      <Container>
-        <ValuesSection />
-      </Container>
+
+      <ValuesSection />
+
       <CtaSection />
     </div>
   );
