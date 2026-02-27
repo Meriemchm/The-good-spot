@@ -43,6 +43,7 @@ export default function AudienceSection({
         whileInView={{ opacity: 1 }}
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.8 }}
+        className="hidden md:block"
       >
         <AudienceDecorations />
       </motion.div>

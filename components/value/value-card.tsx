@@ -21,7 +21,7 @@ export default function ValueCard({
         ${
           highlighted
             ? "bg-primary text-white -rotate-2"
-            : "bg-gray-100 text-black"
+            : "bg-white text-black"
         }
       `}
     >

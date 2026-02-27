@@ -53,7 +53,7 @@ export default function SectionBlock({
         <motion.div className="flex-1 space-y-6" variants={itemVariants}>
           <motion.span
             variants={itemVariants}
-            className="text-sm text-amber-500 font-medium"
+            className="text-sm text-primary font-medium"
           >
             {t("subtitle")}
           </motion.span>

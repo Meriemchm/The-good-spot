@@ -14,9 +14,9 @@ interface InputFieldProps<T extends FieldValues> {
   error?: FieldError;
   textarea?: boolean;
   placeholder?: string;
-  min?:string;
-  max?:string;
-  step?:number;
+  min?: string;
+  max?: string;
+  step?: number;
 }
 
 const InputField = <T extends FieldValues>({
@@ -34,8 +34,8 @@ const InputField = <T extends FieldValues>({
   return (
     <div className="flex flex-col gap-1">
       {label && (
-        <label className="font-semibold text-black">
-          {label} <span className="text-2xl">*</span>
+        <label className=" text-black">
+          <span className="font-semibold">{label}</span> <span className="text-2xl">*</span>
         </label>
       )}
 

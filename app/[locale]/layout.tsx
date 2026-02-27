@@ -3,6 +3,7 @@ import { Toaster } from "react-hot-toast";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import Footer from "@/components/footer/footer";
+import ScrollToTopButton from "@/components/ui/scroll-to-to-bottom";
 
 export default async function LocaleLayout({
   children,
@@ -16,6 +17,7 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider messages={messages} locale={locale}>
+      <ScrollToTopButton />
       <Toaster />
       <Navbar />
       {children}

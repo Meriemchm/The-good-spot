@@ -11,7 +11,7 @@ const Hero = () => {
     <div className="relative h-screen bg-white overflow-hidden grid place-items-center">
       {/* Vidéo en background */}
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover "
+        className="absolute top-0 left-0 w-full h-full object-cover"
         autoPlay
         loop
         muted
@@ -32,31 +32,35 @@ const Hero = () => {
 
       {/* Contenu animé */}
       <div className="relative z-10 text-center px-4 max-w-3xl mx-auto">
-        {/* Title */}
+        {/* Titre */}
         <motion.h1
           initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="relative text-white text-3xl md:text-5xl font-bold mb-6 leading-tight flex items-center justify-center gap-2"
+          className="relative text-white text-3xl md:text-5xl font-bold mb-6 leading-tight"
         >
           {t("title")}
+
+          {/* Étoile : position et taille responsives */}
           <Image
             src="/stars.svg"
             alt="stars"
             width={28}
             height={28}
-            className="absolute inline-block right-0 top-0"
+            className="absolute inline-block md:right-0 md:top-0 right-[-10px] top-[-10px] md:w-7 w-5 h-auto"
           />
+
+          {/* Flèche spirale : position et taille responsives */}
           <Image
             src="/arrow-spiral-down-5.svg"
             alt="spiral-down"
             width={250}
             height={250}
-            className="absolute inline-block -left-5 top-10"
+            className="absolute inline-block md:-left-5 md:top-10 -z-1 -left-7.5 top-20 md:w-64 w-32 h-auto"
           />
         </motion.h1>
 
-        {/* Subtitle */}
+        {/* Sous-titre */}
         <motion.p
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -66,7 +70,7 @@ const Hero = () => {
           {t("subtitle")}
         </motion.p>
 
-        {/* Button */}
+        {/* Bouton */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

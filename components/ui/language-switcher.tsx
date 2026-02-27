@@ -21,7 +21,7 @@ export default function LanguageSwitcher({
   };
 
   const activeColor =
-    variant === "light" ? "font-bold text-white" : "font-bold text-black";
+    variant === "light" ? "font-semibold text-white" : "font-semibold text-black";
 
   const inactiveColor =
     variant === "light"

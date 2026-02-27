@@ -9,6 +9,12 @@ import { motion } from "framer-motion";
 export default function CtaFooter() {
   const t = useTranslations("ctaFooterlang");
 
+  // Récupérer le titre et le découper
+  const titleText = t("title");
+  const words = titleText.split(" ");
+  const lastSixWords = words.slice(-4).join(" ");
+  const firstPart = words.slice(0, -4).join(" ");
+
   // Variantes pour les deux blocs
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -39,18 +45,31 @@ export default function CtaFooter() {
         variants={itemVariants}
         className="flex-2 flex flex-col justify-center text-black p-12"
       >
-        <h2 className="text-2xl md:text-5xl max-w-2xl py-4 font-medium mb-6 leading-tight">
-          {t("title")}
-        </h2>
-    
-          <Link
-            href={"/contact"}
-            className="px-6 py-3 bg-black text-white rounded-full hover:scale-105 duration-200 transition w-fit block"
-          >
-            {t("button")}
-          </Link>
-        </motion.div>
+        {/* Titre avec image à côté et soulignement des 6 derniers mots */}
+        <div className="flex items-center gap-3 flex-wrap mb-6">
+          <h2 className="relative text-2xl md:text-5xl max-w-2xl font-medium leading-tight">
+            {firstPart && <>{firstPart} </>}
+            <span className="relative font-semibold inline-block">
+              {lastSixWords}
+              <span className="absolute left-0 bottom-0 w-full h-1 bg-black" />
+            </span>
+            <Image
+              src="/splash.svg"
+              alt=""
+              width={40}
+              height={40}
+              className="absolute top-0 md:right-12 right-0 w-8 h-8 md:w-10 md:h-10"
+            />
+          </h2>
+        </div>
 
+        <Link
+          href={"/contact"}
+          className="px-6 py-3 bg-black text-white rounded-full hover:scale-105 duration-200 transition w-fit block"
+        >
+          {t("button")}
+        </Link>
+      </motion.div>
 
       {/* Bloc image */}
       <motion.div

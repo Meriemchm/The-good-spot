@@ -32,7 +32,7 @@ export default function HousesSection() {
   };
 
   return (
-    <section className="bg-[#F3F1EC] py-20">
+    <section className="bg-thirdary py-20">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header avec animations */}
         <motion.div
@@ -51,7 +51,7 @@ export default function HousesSection() {
         >
           <motion.h2
             variants={headerVariants}
-            className="text-4xl md:text-5xl font-semibold"
+            className="text-4xl md:text-5xl "
           >
             {t("title")}
           </motion.h2>

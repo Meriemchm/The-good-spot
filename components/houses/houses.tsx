@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { House, HouseData } from "@/data/HouseData";
 import HouseCard from "./house-column-card";
+import CtaSection from "../cta-section/cta-section";
 
 export default function PropertySection() {
   // Variantes pour la grille (conteneur principal avec stagger)
@@ -24,23 +25,26 @@ export default function PropertySection() {
   };
 
   return (
-    <motion.section
-      className="bg-[#F3F1EC] px-6 lg:px-20"
-      variants={containerVariants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.3 }}
-    >
-      {HouseData.map((house) => (
-        <motion.div
-          key={house.id}
-          variants={itemVariants}
-          whileHover={{ scale: 1.02 }}
-          transition={{ type: "spring", stiffness: 300, damping: 20 }}
-        >
-          <HouseCard property={house} />
-        </motion.div>
-      ))}
-    </motion.section>
+    <>
+      <motion.section
+        className="bg-[#f3efec] px-6 lg:px-20"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        {HouseData.map((house) => (
+          <motion.div
+            key={house.id}
+            variants={itemVariants}
+            whileHover={{ scale: 1.02 }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+          >
+            <HouseCard property={house} />
+          </motion.div>
+        ))}
+      </motion.section>
+      <CtaSection />
+    </>
   );
 }

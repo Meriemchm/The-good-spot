@@ -39,51 +39,49 @@ export default function AboutSection({
   };
 
   return (
-    <section className="relative flex bg-primary h-screen py-28 overflow-hidden">
+    <section className="relative flex bg-primary h-screen py-16 md:py-28 overflow-hidden">
       {/* Contenu central – animation au scroll */}
       <motion.div
         className="flex flex-col justify-center items-center max-w-5xl mx-auto text-center px-6 relative z-10"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }} // se déclenche une fois quand 30% de l'élément est visible
+        viewport={{ once: true, amount: 0.3 }}
       >
-        {/* <motion.div variants={itemVariants}>
-          <Image
-            src="LogoTheGoodSpot.svg"
-            alt="logo"
-            width={80}
-            height={80}
-            className=""
-          />
-        </motion.div> */}
-
         <motion.h2
           variants={itemVariants}
-          className="text-4xl max-w-xl md:text-5xl font-semibold leading-tight mb-6"
+          className="relative text-3xl md:text-4xl lg:text-5xl lg:max-w-xl max-w-md font-semibold leading-tight mb-6"
         >
           {t("title")}
+          {/* Image splash en haut à droite */}
+          <Image
+            src="/splash.svg"
+            alt=""
+            width={60}
+            height={60}
+            className="absolute -top-4 -right-4 md:-top-6 md:-right-6 w-8 h-8 md:w-12 md:h-12"
+          />
         </motion.h2>
 
         <motion.p
           variants={itemVariants}
-          className="text-white max-w-2xl mx-auto mb-8"
+          className="text-white/90 max-w-md mx-auto mb-8 text-sm md:text-base"
         >
           {t("description")}
         </motion.p>
 
         <motion.div variants={itemVariants}>
           <Link href="/concept">
-            <button className="px-6 py-3 bg-black text-white rounded-full hover:scale-105 transition-transform duration-300">
+            <button className="px-6 py-3 bg-black text-white rounded-full hover:scale-105 transition-transform duration-300 text-sm md:text-base">
               {t("button")}
             </button>
           </Link>
         </motion.div>
       </motion.div>
 
-      {/* IMAGE GAUCHE – glisse depuis la gauche au scroll */}
+      {/* IMAGE GAUCHE */}
       <motion.div
-        className="absolute top-16 left-0 md:-left-10"
+        className="absolute top-10 md:top-16 -left-10"
         initial={{ x: -100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true, amount: 0.3 }}
@@ -93,15 +91,15 @@ export default function AboutSection({
         <Image
           src={leftImage}
           alt="left image"
-          width={280}
-          height={320}
-          className="rounded-2xl object-cover shadow-lg"
+          width={150}
+          height={170}
+          className="rounded-2xl object-cover shadow-lg md:w-70 md:h-80 w-56 h-auto"
         />
       </motion.div>
 
-      {/* IMAGE DROITE – glisse depuis la droite au scroll */}
+      {/* IMAGE DROITE */}
       <motion.div
-        className="absolute bottom-16 right-0 md:-right-10"
+        className="absolute bottom-10 md:bottom-16 -right-10"
         initial={{ x: 100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true, amount: 0.3 }}
@@ -111,9 +109,9 @@ export default function AboutSection({
         <Image
           src={rightImage}
           alt="right image"
-          width={320}
-          height={260}
-          className="rounded-2xl object-cover shadow-lg"
+          width={180}
+          height={140}
+          className="rounded-2xl object-cover shadow-lg md:w-[320px] md:h-65 w-56 h-auto"
         />
       </motion.div>
     </section>

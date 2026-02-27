@@ -29,18 +29,16 @@ export default function CtaSection() {
 
   return (
     <section className="relative w-full h-87.5 md:h-112.5 overflow-hidden">
-      {/* Image de fond avec zoom progressif */}
+      {/* Image de fond */}
+      <Image
+        src="/Images/cta-section-pic.png"
+        alt="Community"
+        fill
+        priority
+        className="object-cover"
+      />
 
-        <Image
-          src="/Images/cta-section-pic.png"
-          alt="Community"
-          fill
-          priority
-          className="object-cover"
-        />
-
-
-      {/* Overlay sombre avec fondu */}
+      {/* Overlay sombre */}
       <motion.div
         className="absolute inset-0 bg-black/40"
         initial={{ opacity: 0 }}
@@ -51,7 +49,7 @@ export default function CtaSection() {
 
       {/* Contenu avec apparition décalée */}
       <motion.div
-        className="relative z-10 flex h-full items-center justify-between px-8 md:px-20"
+        className="relative z-10 flex flex-col md:flex-row h-full items-center justify-center md:justify-between px-8 md:px-20 text-center md:text-left"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -59,9 +57,17 @@ export default function CtaSection() {
       >
         <motion.h2
           variants={itemVariants}
-          className="text-white text-3xl md:text-5xl font-semibold max-w-2xl leading-tight"
+          className="relative text-white text-3xl md:text-5xl font-semibold max-w-2xl leading-tight mb-6 md:mb-0"
         >
           {t("title")}
+          {/* Image ribbon en bas à gauche */}
+          <Image
+            src="/ribbon.svg"
+            alt=""
+            width={40}
+            height={40}
+            className="absolute lg:left-[35%] md:left-[80%] -right-2 bottom-5  w-8 h-8 md:w-12 md:h-12"
+          />
         </motion.h2>
 
         <motion.div variants={itemVariants}>
@@ -71,7 +77,7 @@ export default function CtaSection() {
           >
             <Link
               href={t("url")}
-              className="flex items-center gap-2 bg-primary text-black px-6 py-3 rounded-full font-medium"
+              className="flex items-center gap-2 bg-primary text-black px-8 py-4 md:px-6 md:py-3 rounded-full font-medium"
             >
               {t("button")}
               <ArrowUpRight size={18} />

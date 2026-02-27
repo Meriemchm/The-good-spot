@@ -29,10 +29,9 @@ const HearderTitle: React.FC<HearderTitleProps> = ({ title, subtitle }) => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
       >
-        {firstPart}{" "}
-        <span className="relative inline-block">
+        {firstPart}{" "} 
+        <span className="relative inline-block underline">
           {lastWord}
-          <span className="absolute left-0 bottom-0 w-full h-1 bg-black "></span>
         </span>
       </motion.p>
     </div>
