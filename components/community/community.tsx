@@ -37,9 +37,9 @@ export const Community = () => {
             "/Images/2_.jpg",
             "/Images/3.jpg",
             "/Images/4.jpg",
-          ]} // Utilise un tableau pour plusieurs images
+          ]} 
           reverse={true}
-          sparkles={true} // Affiche l'image sparkles pour ce bloc
+          sparkles={true} 
         />
       </Container>
       <ValuesSection />

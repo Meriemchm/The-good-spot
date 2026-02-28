@@ -100,19 +100,20 @@ export default function SectionBlock({
         </motion.div>
 
         {/* Image(s) */}
-        <motion.div className="flex-1" variants={itemVariants}>
+        <motion.div className="flex-1 w-full" variants={itemVariants}>
           {isImageArray ? (
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-2 gap-4">
               {imageSrc.map((src, index) => (
                 <div
                   key={index}
-                  className="relative aspect-square overflow-hidden rounded-2xl"
+                  className="relative w-full h-56 sm:h-72 md:h-80 rounded-2xl overflow-hidden"
                 >
                   <Image
                     src={src}
                     alt={`section image ${index + 1}`}
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 640px) 100vw, 50vw"
                   />
                 </div>
               ))}
