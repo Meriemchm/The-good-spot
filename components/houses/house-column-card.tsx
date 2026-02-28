@@ -18,7 +18,7 @@ export default function HouseCard({ property }: PropertyCardProps) {
     <div className="py-12 border-b border-gray-300">
       <div className="flex flex-col lg:flex-row gap-10 items-center">
         {/* Image */}
-        <Link key={property.id} href={`/${locale}/houses/${property.nameHouse}`}>
+        <Link key={property.id} href={`/${locale}/${locale === "fr" ? "maisons" : "houses"}/${property.nameHouse}`}>
           <div className="flex-1 rounded-2xl overflow-hidden cursor-pointer">
             <Image
               src={property.images[0]}
