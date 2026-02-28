@@ -10,7 +10,7 @@ export default function FAQSection() {
     <Container className="pt-12 pb-24">
       <section className=" bg-white">
         <HearderTitle title={t("title")} subtitle={t("subtitle")} />
-        <div className="">
+        <div className="mt-12 md:mt-0">
           {FAQData.map((item) => (
             <AccordionItem
               key={item.id}

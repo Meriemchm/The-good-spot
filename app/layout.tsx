@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "The Good Spot.",
-  description: "The Good Spot.",
+  description: "Coliving spaces in Paris",
 };
 
 export default function RootLayout({
