@@ -34,7 +34,7 @@ export default function CtaFooter() {
 
   return (
     <motion.section
-      className="w-full min-h-[500px] flex flex-col md:flex-row bg-primary"
+      className="w-full min-h-125 flex flex-col md:flex-row bg-primary"
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
@@ -74,13 +74,13 @@ export default function CtaFooter() {
       {/* Bloc image */}
       <motion.div
         variants={itemVariants}
-        className="flex-1 relative w-full min-h-[300px]"
+        className="flex-1 relative w-full min-h-75"
       >
         <Image
           src="/Images/cta-footer-pic.png"
           alt="Communauté"
           fill
-          sizes=""
+          sizes="100wv"
           priority
           className="object-cover"
         />

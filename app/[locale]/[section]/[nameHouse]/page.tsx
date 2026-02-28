@@ -1,6 +1,7 @@
 import { Banner } from "@/components/banner/banner";
 import CtaFooter from "@/components/cta-footer/cta-footer";
 import HouseDetailCard from "@/components/house-detail-card/house-detail-card";
+import { Container } from "@/components/ui/container";
 import { HouseData } from "@/data/HouseData";
 import { Ban } from "lucide-react";
 import { notFound } from "next/navigation";
@@ -29,9 +30,12 @@ export default async function HouseDetails({ params }: Props) {
   if (!house) return notFound();
 
   return (
-    <>
-      <HouseDetailCard house={house} />
+    <div className="overflow-hidden">
+    <Banner title={house.nameHouse.replace("-", " ")} />
+      <Container>
+        <HouseDetailCard house={house} />
+      </Container>
       <CtaFooter />
-    </>
+    </div>
   );
 }

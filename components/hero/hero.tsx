@@ -37,7 +37,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="relative text-white text-3xl md:text-5xl font-bold mb-6 leading-tight"
+          className="relative text-white max-w-xl text-3xl md:text-5xl font-bold mb-6 leading-tight"
         >
           {t("title")}
 
@@ -47,7 +47,7 @@ const Hero = () => {
             alt="stars"
             width={28}
             height={28}
-            className="absolute inline-block md:right-0 md:top-0 right-[-10px] top-[-10px] md:w-7 w-5 h-auto"
+            className="absolute inline-block md:right-0 md:-top-2 -right-2.5 -top-2.5 md:w-7 w-5 h-auto"
           />
 
           {/* Flèche spirale : position et taille responsives */}
@@ -56,7 +56,7 @@ const Hero = () => {
             alt="spiral-down"
             width={250}
             height={250}
-            className="absolute inline-block md:-left-5 md:top-10 -z-1 -left-7.5 top-20 md:w-64 w-32 h-auto"
+            className="absolute inline-block md:-left-32 md:top-10 -z-1 -left-7.5 top-20 md:w-64 w-32 h-auto"
           />
         </motion.h1>
 

@@ -15,6 +15,7 @@ import HouseTabs from "../ui/house-tabs";
 import Button from "../ui/button";
 import Link from "next/link";
 import HouseImageViewer from "../ui/HouseImageViewer";
+import { HouseDetailHeader } from "./house-detail-header";
 
 interface HouseDetailCardProps {
   house: House;
@@ -26,25 +27,7 @@ export default function HouseDetailCard({ house }: HouseDetailCardProps) {
 
   return (
     <div className="max-w-5xl mx-auto py-20 space-y-8">
-      <div className="flex items-center  justify-between gap-10 flex-col md:flex-row">
-        <div className="flex flex-col gap-6">
-          <div className="flex items-center gap-1">
-            <MapPin size={16} className="text-primary" /> {house.address}
-          </div>
-          {/* Titre traduit */}
-          <h1 className="md:text-5xl text-3xl font-semibold">
-            {t(`${house.nameHouse}.title`)}
-          </h1>
-
-          {/* Description */}
-          <p className="text-gray-600">{t(`${house.nameHouse}.description`)}</p>
-        </div>
-        <Link href={`/${locale}/contact`}>
-          <Button className="bg-primary text-white hover:bg-primary/90 transition">
-            contact
-          </Button>
-        </Link>
-      </div>
+      <HouseDetailHeader house={house} />
 
       {/* Carrousel d'images */}
       {house.images && house.images.length > 0 && (

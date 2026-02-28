@@ -14,7 +14,10 @@ interface HouseImageViewerProps {
   houseName?: string;
 }
 
-export default function HouseImageViewer({ images, houseName = "" }: HouseImageViewerProps) {
+export default function HouseImageViewer({
+  images,
+  houseName = "",
+}: HouseImageViewerProps) {
   const [viewMode, setViewMode] = useState<"grid" | "slider">("slider");
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
@@ -28,9 +31,13 @@ export default function HouseImageViewer({ images, houseName = "" }: HouseImageV
 
   const closeLightbox = () => setLightboxOpen(false);
   const goToPrevious = () =>
-    setSelectedImageIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+    setSelectedImageIndex((prev) =>
+      prev === 0 ? images.length - 1 : prev - 1,
+    );
   const goToNext = () =>
-    setSelectedImageIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+    setSelectedImageIndex((prev) =>
+      prev === images.length - 1 ? 0 : prev + 1,
+    );
 
   return (
     <div className="relative space-y-4">
@@ -47,7 +54,7 @@ export default function HouseImageViewer({ images, houseName = "" }: HouseImageV
         >
           <ImageIcon size={20} />
         </button>
-        {/* <button
+        <button
           onClick={() => setViewMode("grid")}
           className={`p-2 rounded-full transition ${
             viewMode === "grid"
@@ -57,11 +64,38 @@ export default function HouseImageViewer({ images, houseName = "" }: HouseImageV
           aria-label="Vue grille"
         >
           <LayoutGrid size={20} />
-        </button> */}
+        </button>
       </div>
 
       {/* Affichage conditionnel */}
       {viewMode === "slider" ? (
+        <Swiper
+          modules={[Navigation, Pagination]}
+          navigation
+          pagination={{ clickable: true }}
+          spaceBetween={10}
+          slidesPerView={1}
+          className="rounded-xl overflow-hidden [&_.swiper-button-next]:text-primary [&_.swiper-button-prev]:text-primary [&_.swiper-pagination-bullet-active]:bg-primary"
+        >
+          {images.map((img, idx) => (
+            <SwiperSlide key={idx}>
+              <div className="cursor-pointer" onClick={() => openLightbox(idx)}>
+                <Image
+                  src={img}
+                  alt={
+                    houseName
+                      ? `${houseName} - image ${idx + 1}`
+                      : `Image ${idx + 1}`
+                  }
+                  width={1200}
+                  height={600}
+                  className="w-full h-125 object-cover"
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      ) : (
         <Swiper
           modules={[Navigation, Pagination]}
           navigation
@@ -72,13 +106,14 @@ export default function HouseImageViewer({ images, houseName = "" }: HouseImageV
         >
           {images.map((img, idx) => (
             <SwiperSlide key={idx}>
-              <div
-                className="cursor-pointer"
-                onClick={() => openLightbox(idx)}
-              >
+              <div className="cursor-pointer" onClick={() => openLightbox(idx)}>
                 <Image
                   src={img}
-                  alt={houseName ? `${houseName} - image ${idx + 1}` : `Image ${idx + 1}`}
+                  alt={
+                    houseName
+                      ? `${houseName} - image ${idx + 1}`
+                      : `Image ${idx + 1}`
+                  }
                   width={1200}
                   height={600}
                   className="w-full h-125 object-cover"
@@ -87,23 +122,6 @@ export default function HouseImageViewer({ images, houseName = "" }: HouseImageV
             </SwiperSlide>
           ))}
         </Swiper>
-      ) : (
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          {images.map((img, idx) => (
-            <div
-              key={idx}
-              className="relative aspect-square cursor-pointer overflow-hidden rounded-xl"
-              onClick={() => openLightbox(idx)}
-            >
-              <Image
-                src={img}
-                alt={houseName ? `${houseName} - image ${idx + 1}` : `Image ${idx + 1}`}
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-          ))}
-        </div>
       )}
 
       {/* Lightbox (inchangée) */}
