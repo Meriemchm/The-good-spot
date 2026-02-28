@@ -45,7 +45,7 @@ export const ContactContainer = () => {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
           >
-            <motion.div variants={itemVariants}>
+            <motion.div className="hidden md:block" variants={itemVariants}>
               <ContactLeft />
             </motion.div>
 
