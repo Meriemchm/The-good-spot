@@ -8,7 +8,7 @@ interface TabProps {
   houseName: string; 
 }
 
-const TABS = ["price", "service", "room"]; 
+const TABS = [ "service", "room"]; 
 
 export default function HouseTabs({ houseName }: TabProps) {
   const t = useTranslations(`property.${houseName}`);
@@ -27,7 +27,7 @@ export default function HouseTabs({ houseName }: TabProps) {
                 : "bg-gray-200 text-gray-700 hover:bg-gray-300"
             }`}
           >
-            {t(`info-house.${tab}.title`)}  {/* ← corrigé */}
+            {t(`info-house.${tab}.title`)}  
           </button>
         ))}
       </div>

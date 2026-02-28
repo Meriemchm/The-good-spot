@@ -1,5 +1,8 @@
+import { Banner } from "@/components/banner/banner";
+import CtaFooter from "@/components/cta-footer/cta-footer";
 import HouseDetailCard from "@/components/house-detail-card/house-detail-card";
 import { HouseData } from "@/data/HouseData";
+import { Ban } from "lucide-react";
 import { notFound } from "next/navigation";
 
 const validSections: Record<string, string[]> = {
@@ -25,5 +28,10 @@ export default async function HouseDetails({ params }: Props) {
   const house = HouseData.find((h) => h.nameHouse === nameHouse);
   if (!house) return notFound();
 
-  return <HouseDetailCard house={house} />;
+  return (
+    <>
+      <HouseDetailCard house={house} />
+      <CtaFooter />
+    </>
+  );
 }

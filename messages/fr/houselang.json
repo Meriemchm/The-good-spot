@@ -21,7 +21,20 @@
         },
         "room": {
           "title": "Chambre",
-          "content": ["2 chambres spacieuses", "1 suite parentale"]
+          "content": [
+            {
+              "name": "Chambre 1",
+              "description": "Chambre spacieuse avec vue jardin",
+              "price": "300€ / mois",
+              "image": "/Images/house-temp.png"
+            },
+            {
+              "name": "Chambre 2",
+              "description": "Grande suite avec salle de bain privée",
+              "price": "600€ / mois",
+              "image": "/Images/house-temp.png"
+            }
+          ]
         }
       }
     },
@@ -41,7 +54,20 @@
         },
         "room": {
           "title": "Chambre",
-          "content": ["2 chambres spacieuses", "1 suite parentale"]
+          "content": [
+            {
+              "name": "Chambre 1",
+              "description": "Chambre spacieuse avec vue jardin",
+              "price": "300€ / mois",
+              "image": "/Images/house-temp.png"
+            },
+            {
+              "name": "Chambre 2",
+              "description": "Grande suite avec salle de bain privée",
+              "price": "600€ / mois",
+              "image": "/Images/house-temp.png"
+            }
+          ]
         }
       }
     },
@@ -56,12 +82,25 @@
       "info-house": {
         "price": { "title": "Prix", "content": "À partir de 950€" },
         "service": {
-          "title": "Service",
+          "title": "Service inclus",
           "content": ["Concierge 24/7", "Entretien du jardin", "Nettoyage"]
         },
         "room": {
           "title": "Chambre",
-          "content": ["2 chambres spacieuses", "1 suite parentale"]
+          "content": [
+            {
+              "name": "Chambre 1",
+              "description": "Chambre spacieuse avec vue jardin",
+              "price": "300€ / mois",
+              "image": "/Images/house-temp.png"
+            },
+            {
+              "name": "Chambre 2",
+              "description": "Grande suite avec salle de bain privée",
+              "price": "600€ / mois",
+              "image": "/Images/house-temp.png"
+            }
+          ]
         }
       }
     },

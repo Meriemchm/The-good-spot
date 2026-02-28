@@ -21,7 +21,20 @@
         },
         "room": {
           "title": "Room",
-          "content": ["2 spacious bedrooms", "1 master suite"]
+          "content": [
+            {
+              "name": "Room 1",
+              "description": "Spacious bedroom with garden view",
+              "price": "€300/month",
+              "image": "/Images/house-temp.png"
+            },
+            {
+              "name": "Room 2",
+              "description": "Large suite with private bathroom",
+              "price": "€600/month",
+              "image": "/Images/house-temp.png"
+            }
+          ]
         }
       }
     },
@@ -41,7 +54,20 @@
         },
         "room": {
           "title": "Room",
-          "content": ["2 spacious bedrooms", "1 master suite"]
+          "content": [
+            {
+              "name": "Room 1",
+              "description": "Spacious bedroom with garden view",
+              "price": "€300/month",
+              "image": "/Images/house-temp.png"
+            },
+            {
+              "name": "Room 2",
+              "description": "Large suite with private bathroom",
+              "price": "€600/month",
+              "image": "/Images/house-temp.png"
+            }
+          ]
         }
       }
     },
@@ -56,12 +82,25 @@
       "info-house": {
         "price": { "title": "Price", "content": "Starting from €950" },
         "service": {
-          "title": "Service",
+          "title": "Service included",
           "content": ["24/7 Concierge", "Garden maintenance", "Cleaning"]
         },
         "room": {
           "title": "Room",
-          "content": ["2 spacious bedrooms", "1 master suite"]
+          "content": [
+            {
+              "name": "Room 1",
+              "description": "Spacious bedroom with garden view",
+              "price": "€300/month",
+              "image": "/Images/house-temp.png"
+            },
+            {
+              "name": "Room 2",
+              "description": "Large suite with private bathroom",
+              "price": "€600/month",
+              "image": "/Images/house-temp.png"
+            }
+          ]
         }
       }
     },

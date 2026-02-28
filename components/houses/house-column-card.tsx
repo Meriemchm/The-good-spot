@@ -59,7 +59,7 @@ export default function HouseCard({ property }: PropertyCardProps) {
           </p>
 
           {/* Tags */}
-          <div className="flex flex-wrap gap-2">
+          {/* <div className="flex flex-wrap gap-2">
             {property.tags?.map((tag, index) => (
               <span
                 key={index}
@@ -68,7 +68,7 @@ export default function HouseCard({ property }: PropertyCardProps) {
                 {t(`${property.nameHouse}.tags.${tag}`)}
               </span>
             ))}
-          </div>
+          </div> */}
 
           {/* Infos */}
           <div className="flex items-center gap-8  pt-4">
