@@ -81,7 +81,7 @@ export default function AboutSection({
 
       {/* IMAGE GAUCHE */}
       <motion.div
-        className="absolute top-10 md:top-16 -left-20 md:-left-10"
+        className="absolute top-10 md:top-16 -left-6 md:-left-10"
         initial={{ x: -100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true, amount: 0.3 }}
