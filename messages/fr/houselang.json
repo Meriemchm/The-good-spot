@@ -14,7 +14,7 @@
         "duplex": "Duplex"
       },
       "info-house": {
-        "price": { "title": "Prix", "content": "À partir de 250 000€" },
+        "price": { "title": "Prix", "content": "À partir de 950€" },
         "service": {
           "title": "Service",
           "content": ["Concierge 24/7", "Entretien du jardin", "Nettoyage"]
@@ -34,7 +34,7 @@
         "luxury": "Luxe"
       },
       "info-house": {
-        "price": { "title": "Prix", "content": "À partir de 250 000€" },
+        "price": { "title": "Prix", "content": "À partir de 950€" },
         "service": {
           "title": "Service",
           "content": ["Concierge 24/7", "Entretien du jardin", "Nettoyage"]
@@ -54,7 +54,7 @@
         "villa": "Villa"
       },
       "info-house": {
-        "price": { "title": "Prix", "content": "À partir de 250 000€" },
+        "price": { "title": "Prix", "content": "À partir de 950€" },
         "service": {
           "title": "Service",
           "content": ["Concierge 24/7", "Entretien du jardin", "Nettoyage"]

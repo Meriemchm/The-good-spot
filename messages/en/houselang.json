@@ -14,7 +14,7 @@
         "duplex": "Duplex"
       },
       "info-house": {
-        "price": { "title": "Price", "content": "Starting from €250,000" },
+        "price": { "title": "Price", "content": "Starting from €950" },
         "service": {
           "title": "Service",
           "content": ["24/7 Concierge", "Garden maintenance", "Cleaning"]
@@ -34,7 +34,7 @@
         "luxury": "Luxury"
       },
       "info-house": {
-        "price": { "title": "Price", "content": "Starting from €250,000" },
+        "price": { "title": "Price", "content": "Starting from €950" },
         "service": {
           "title": "Service",
           "content": ["24/7 Concierge", "Garden maintenance", "Cleaning"]
@@ -54,7 +54,7 @@
         "villa": "Villa"
       },
       "info-house": {
-        "price": { "title": "Price", "content": "Starting from €250,000" },
+        "price": { "title": "Price", "content": "Starting from €950" },
         "service": {
           "title": "Service",
           "content": ["24/7 Concierge", "Garden maintenance", "Cleaning"]

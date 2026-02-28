@@ -37,8 +37,6 @@ export default function PropertySection() {
           <motion.div
             key={house.id}
             variants={itemVariants}
-            whileHover={{ scale: 1.02 }}
-            transition={{ type: "spring", stiffness: 300, damping: 20 }}
           >
             <HouseCard property={house} />
           </motion.div>
