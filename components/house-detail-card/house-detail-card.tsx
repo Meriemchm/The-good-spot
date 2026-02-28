@@ -16,6 +16,7 @@ import Button from "../ui/button";
 import Link from "next/link";
 import HouseImageViewer from "../ui/HouseImageViewer";
 import { HouseDetailHeader } from "./house-detail-header";
+import { motion } from "framer-motion";
 
 interface HouseDetailCardProps {
   house: House;
@@ -31,10 +32,17 @@ export default function HouseDetailCard({ house }: HouseDetailCardProps) {
 
       {/* Carrousel d'images */}
       {house.images && house.images.length > 0 && (
-        <HouseImageViewer
-          images={house.images}
-          houseName={t(`${house.nameHouse}.title`)} // optionnel, pour le alt
-        />
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
+        >
+          <HouseImageViewer
+            images={house.images}
+            houseName={t(`${house.nameHouse}.title`)}
+          />
+        </motion.div>
       )}
       {/* Infos générales */}
       {/* <div className="flex flex-wrap gap-6 text-gray-500 text-sm pt-4">
@@ -65,8 +73,14 @@ export default function HouseDetailCard({ house }: HouseDetailCardProps) {
           ))}
         </div>
       )} */}
-
-      <HouseTabs houseName={house.nameHouse} />
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.6 }}
+      >
+        <HouseTabs houseName={house.nameHouse} />
+      </motion.div>
     </div>
   );
 }

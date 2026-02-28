@@ -58,7 +58,7 @@ export default function CtaFooter() {
               alt=""
               width={40}
               height={40}
-              className="absolute top-0 md:right-12 right-0 w-8 h-8 md:w-10 md:h-10"
+              className="absolute -top-8 md:right-12 right-0 w-8 h-8 md:w-10 md:h-10"
             />
           </h2>
         </div>

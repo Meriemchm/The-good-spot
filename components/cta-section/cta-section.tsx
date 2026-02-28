@@ -49,7 +49,7 @@ export default function CtaSection() {
 
       {/* Contenu avec apparition décalée */}
       <motion.div
-        className="relative z-10 flex flex-col md:flex-row h-full items-center justify-center md:justify-between px-8 md:px-20 text-center md:text-left"
+        className="relative z-10 flex flex-col lg:flex-row h-full md:gap-6 items-center justify-center lg:justify-between px-8 lg:px-20 text-center md:text-left"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -66,7 +66,7 @@ export default function CtaSection() {
             alt=""
             width={40}
             height={40}
-            className="absolute lg:left-[35%] md:left-[80%] -right-2 bottom-5  w-8 h-8 md:w-12 md:h-12"
+            className="absolute md:left-0 left-2 -top-8   w-8 h-8 md:w-12 md:h-12"
           />
         </motion.h2>
 
