@@ -47,7 +47,7 @@ export default function SectionBlock({
       viewport={{ once: true, amount: 0.3 }}
     >
       <motion.div
-        className={`max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12 ${
+        className={`max-w-7xl mx-auto px-6 flex flex-col-reverse md:flex-row items-center gap-12 ${
           reverse ? "md:flex-row-reverse" : ""
         }`}
         variants={containerVariants}
