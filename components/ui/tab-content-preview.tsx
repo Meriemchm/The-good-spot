@@ -44,6 +44,7 @@ export default function TabContentPreview({ houseName, activeTab }: Props) {
               description={room.description}
               price={room.price}
               image={room.image}
+              status={room.status}
             />
           ))}
         </div>

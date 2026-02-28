@@ -24,7 +24,7 @@ export default function HouseTabs({ houseName }: TabProps) {
             className={`px-6 py-2 rounded-full transition font-medium ${
               activeTab === tab
                 ? "bg-primary text-white"
-                : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                : "bg-neutral-100 text-black hover:bg-neutral-200"
             }`}
           >
             {t(`info-house.${tab}.title`)}  

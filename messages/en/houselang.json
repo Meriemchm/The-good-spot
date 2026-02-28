@@ -26,12 +26,14 @@
               "name": "Room 1",
               "description": "Spacious bedroom with garden view",
               "price": "€300/month",
+              "status": "Available",
               "image": "/Images/house-temp.png"
             },
             {
               "name": "Room 2",
               "description": "Large suite with private bathroom",
               "price": "€600/month",
+              "status": "Available",
               "image": "/Images/house-temp.png"
             }
           ]
@@ -59,12 +61,14 @@
               "name": "Room 1",
               "description": "Spacious bedroom with garden view",
               "price": "€300/month",
+              "status": "Available",
               "image": "/Images/house-temp.png"
             },
             {
               "name": "Room 2",
               "description": "Large suite with private bathroom",
               "price": "€600/month",
+              "status": "Available",
               "image": "/Images/house-temp.png"
             }
           ]
@@ -92,12 +96,14 @@
               "name": "Room 1",
               "description": "Spacious bedroom with garden view",
               "price": "€300/month",
+              "status": "Available",
               "image": "/Images/house-temp.png"
             },
             {
               "name": "Room 2",
               "description": "Large suite with private bathroom",
               "price": "€600/month",
+              "status": "Available",
               "image": "/Images/house-temp.png"
             }
           ]
