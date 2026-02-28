@@ -39,7 +39,7 @@ export default function ConceptSection() {
         {/* Image */}
         <motion.div className="relative w-full h-112.5" variants={itemVariants}>
           <Image
-            src="/images/concept-pic.png"
+            src="/Images/concept-pic.png"
             alt="About"
             fill
             className="object-cover rounded-t-full"

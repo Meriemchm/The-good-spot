@@ -35,7 +35,7 @@ export const ContactContainer = () => {
     <div>
       <div
         className="h-full bg-cover bg-center bg-thirdary rounded-br-2xl rounded-bl-2xl"
-        style={{ backgroundImage: "url('/images/contact-bg.png')" }}
+        style={{ backgroundImage: "url('/Images/contact-bg.png')" }}
       >
         <Container className="py-24">
           <motion.div

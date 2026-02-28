@@ -44,7 +44,7 @@ export default function Services() {
 
         {/* Grille des services avec stagger */}
         <motion.section
-          className="grid grid-cols-1 md:grid-cols-3 gap-6"
+          className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 md:mt-0"
           variants={gridContainerVariants}
           initial="hidden"
           whileInView="visible"

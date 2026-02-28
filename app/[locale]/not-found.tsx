@@ -10,7 +10,7 @@ export default function NotFound() {
   return (
     <div
       className="flex flex-col items-center justify-center min-h-screen bg-cover bg-center px-6 text-center"
-      style={{ backgroundImage: "url('/images/contact-bg.png')" }}
+      style={{ backgroundImage: "url('/Images/contact-bg.png')" }}
     >
       {/* Message */}
       <p className="text-xl sm:text-2xl text-white max-w-lg">

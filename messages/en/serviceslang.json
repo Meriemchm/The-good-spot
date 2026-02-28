@@ -3,28 +3,28 @@
     "title": "Services",
     "subtitle": "The quality of our services",
     "service1": {
-      "title": "Design",
-      "description": "We create modern and user-friendly interfaces."
+      "title": "Lorem ipsum",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     "service2": {
-      "title": "Development",
-      "description": "Robust and scalable web applications."
+      "title": "Lorem ipsum",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     "service3": {
-      "title": "Optimization",
-      "description": "Performance and SEO improvements."
+      "title": "Lorem ipsum",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     "service4": {
-      "title": "Consulting",
-      "description": "Expert advice for your digital strategy."
+      "title": "Lorem ipsum",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     "service5": {
-      "title": "Support",
-      "description": "Continuous maintenance and updates."
+      "title": "Lorem ipsum",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     "service6": {
-      "title": "Analytics",
-      "description": "Data-driven insights for growth."
+      "title": "Lorem ipsum",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     }
   }
 }
